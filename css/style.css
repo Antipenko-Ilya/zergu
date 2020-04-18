@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+.header-logo {
+    width: 13%;
+    height: auto;
+}
+.navbar-link {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.header-contact {
+    font-size: 20px;
+    color: #fff;
+}
+.container {
+    min-height: 550px;
+    height: 100vh;
+}
+.hero {
+    height: 100%;
+    background: url('../image/hero/kran.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-title {
+    font-size: 72px;
+    color: #fff;
+}
+.hero-subtitle {
+    font-size: 30px;
+    color: #fff;
+}
+.about {
+    height: 100%;
+    background: url('../image/about/about-bg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+}
+.about-title {
+    font-size: 72px;
+    color: #fff;
+}
+.about-img {
+    width: 35%;
+    height: auto;
+}
+.about-content {
+    position: absolute;
+    color: #000;
+    width: 28%;
+    background: url('../image/about/holst.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+}
+.about-content__elem{
+    display: flex;
+}
+.about-content__elem-img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
