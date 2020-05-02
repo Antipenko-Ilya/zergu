@@ -2,12 +2,22 @@
     margin: 0;
     padding: 0;
 }
+.container {
+    background: url(../image/container/container-bg.jpg);
+}
+.wrap {
+    width: 75%;
+    margin: 0 auto;
+    height: 100vh;
+}
 .header {
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: url(../image/header/navbar-bg.jpg);
+    margin: 0 auto;
+    font-family: Abibas;
 }
 .header-logo {
     width: 13%;
@@ -16,17 +26,14 @@
 .navbar-link {
     margin-left: 15px;
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+    color: #FFC011;
+    font-size: 26px;
 }
 .header-contact {
     font-size: 20px;
     color: #fff;
 }
-.container {
-    min-height: 550px;
-    height: 100vh;
-}
+
 .hero {
     height: 100%;
     background: url('../image/hero/kran.jpg');
@@ -37,16 +44,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: Bradley;
 }
 .hero-title {
     font-size: 72px;
-    color: #fff;
+    color: #FFC011;
 }
 .hero-subtitle {
     font-size: 30px;
-    color: #fff;
+    color: #FFC011;
 }
 .about {
+    justify-content: flex-start;
     height: 100%;
     background: url('../image/about/about-bg.jpg');
     background-repeat: no-repeat; 
@@ -54,13 +63,14 @@
     background-position: center center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: relative;
 }
 .about-title {
     font-size: 72px;
-    color: #fff;
+    font-family: Bradley;
+    color: #FFC011;
 }
 .about-img {
     width: 35%;
@@ -69,18 +79,19 @@
 .about-content {
     position: absolute;
     color: #000;
-    width: 28%;
-    background: url('../image/about/holst.jpg');
-    background-repeat: no-repeat; 
+    width: 29%;
+    background: url(../image/about/holst.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    font-size: 15px;
 }
 .about-content__elem{
     display: flex;
 }
 .about-content__elem-img {
     display: block;
-    width: 50%;
-    height: auto;
+    width: 20%;
+    height: 20%;
     margin: 0 auto;
 }
