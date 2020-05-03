@@ -27,7 +27,7 @@
     margin-left: 15px;
     text-decoration: none;
     color: #FFC011;
-    font-size: 26px;
+    font-size: 36px;
 }
 .header-contact {
     font-size: 20px;
@@ -36,7 +36,7 @@
 
 .hero {
     height: 100%;
-    background: url('../image/hero/kran.jpg');
+    background: url('../image/hero/kran.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center center;
@@ -47,11 +47,26 @@
     font-family: Bradley;
 }
 .hero-title {
-    font-size: 72px;
+    font-size: 132px;
     color: #FFC011;
+    font-weight: normal;
 }
 .hero-subtitle {
-    font-size: 30px;
+    font-size: 50px;
+    color: #FFC011;
+}
+.contact {
+    background: url('../image/contact/bg.png');
+}
+.contact-title {
+    font-size: 132px;
+    color: #FFC011;
+    font-family: Bradley;
+    font-weight: normal;
+}
+.contact-subtitle {
+    font-size: 50px;
+    font-family: Bradley;
     color: #FFC011;
 }
 .about {
@@ -63,8 +78,7 @@
     background-position: center center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
     position: relative;
 }
 .about-title {
