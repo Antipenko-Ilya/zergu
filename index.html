@@ -8,12 +8,12 @@
         <title>Traktir-Zergut</title>
         <style>
             @font-face {
-             font-family: Bradley; /* Гарнитура шрифта */
-             src: url(fonts/bradley/Bradley.otf); /* Для IE5-8 */
+             font-family: Bradley;
+             src: url(fonts/bradley/Bradley.otf); 
             }
             @font-face {
-             font-family: Abibas; /* Гарнитура шрифта */
-             src: url(fonts/abibas/Abibas.otf); /* Для IE5-8 */
+             font-family: Abibas;
+             src: url(fonts/abibas/Abibas.otf);
             }
         </style>
     </head>
@@ -22,11 +22,12 @@
             <header class="header">
                 <img class="header-logo" src="image/header/logo-zergut.png" alt="logo">
                 <div class="navbar">
-                    <a href="#" class="navbar-link">О нас</a>
-                    <a href="#" class="navbar-link">Меню</a>
-                    <a href="#" class="navbar-link">Анонс</a>
+                    <a href="#contact" class="navbar-link">О нас</a>
+                    <a href="#menu" class="navbar-link">Меню</a>
+                    <a href="#desk" class="navbar-link">Анонс</a>
                     <a href="#" class="navbar-link">Караоке</a>
                     <a href="#" class="navbar-link">Доставка</a>
+                    <a href="#footer" class="navbar-link">Контакты</a>
                 </div>
             </header>
         </div>
@@ -38,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="contact" class="container">
             <div class="wrap">
                 <div class="contact">
                     <h1 class="contact-title">Трактир "Зер Гут" рядом с вами!</h1>
@@ -52,38 +53,56 @@
                             </div>
                         </div>
                         <div class="contact-content__right">
-                        
+                            <div class="contact-content__right-content">
+                                <h4 class="contact-content__right-content-title">БРОНИРУЙТЕ ПРЯМО СЕЙЧАС!</h4>
+                                <div class="contact-content__right-content_text">При бронирование столика на четверых и депозите от 5000 руб, мы привезем Вас в Трактир "Зер Гут" - БЕСПЛАТНО!</div>
+                                <div class="contact-content__right-content_btn">ЗАБРОНИРОВАТЬ</div>
+                            </div>  
                         </div>
-                    </img>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="wrap">
-                <div class="about">
-                    <h2 class="about-title">В Трактир "Зер Гут" хочется возвращаться</h1>
-                    <img src="image/about/opisanie.png" class="about-img" alt="">
-                    <div class="about-content">
-                        <div class="about-content__elem">
-                            <p>Трактир "ЗЕР ГУТ" представляет традиционную чешскую кухню и предлагает широкий выбор сытных и вкусных мясных блюд — Рулька "Швейк в полевой обедне", Ребра "Швейк на родине в Будейвицах", и конечно же, чешские колбаски, великолепно сочетающиеся Pilsner Urquell.</p>
-                            <img src="image/about/koleno.jpg" class="about-content__elem-img" alt="koleno">
-                        </div>
-                        <div class="about-content__elem">
-                            <img src="image/about/beer.png" class="about-content__elem-img" alt="beer">
-                            <p>Pilsner Urquell - это прадед всех чешских лагеров - золотистого цвета с чистым мягким вкусом и богатым ароматом душистого хмеля. Путем создания особых условий перевозки, хранения, розлива и подачи - мы доносим до наших гостей оригинальный вкус пива, которое доставляется
-                                в Трактир "Зер Гут"
-                                напрямую из Чехии.</p>
-                        </div>
-                        <p>Все вокруг создает уникальную, уютную атмосферу Великой Австро-Венгерской империи конца 19-ого, начала 20-ого столетия. Дух заведения перенесёт Вас в старую Прагу. Вы окунетесь в атмосферу быта Йозефа Швейка, который дружески встречает при входе с вкуснейшей кружкой чешского напитка!</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="wrap">
+                <div class="about">
+                    <h1 class="about-title">В Трактир "Зер Гут" хочется возвращаться</h1>
+                    <div class="about-content_wrap">
+                        <div class="about-content">
+                            <div class="about-content__elem">
+                                <p>Трактир "ЗЕР ГУТ" представляет традиционную чешскую кухню и предлагает широкий выбор сытных и вкусных мясных блюд — Рулька "Швейк в полевой обедне", Ребра "Швейк на родине в Будейвицах", и конечно же, чешские колбаски, великолепно сочетающиеся Pilsner Urquell.</p>
+                                <img src="image/about/koleno.jpg" class="about-content__elem-img" alt="koleno">
+                            </div>
+                            <div class="about-content__elem">
+                                <img src="image/about/beer.png" class="about-content__elem-img" alt="beer">
+                                <p>Pilsner Urquell - это прадед всех чешских лагеров - золотистого цвета с чистым мягким вкусом и богатым ароматом душистого хмеля. Путем создания особых условий перевозки, хранения, розлива и подачи - мы доносим до наших гостей оригинальный вкус пива, которое доставляется
+                                    в Трактир "Зер Гут"
+                                    напрямую из Чехии.</p>
+                            </div>
+                            <p>Все вокруг создает уникальную, уютную атмосферу Великой Австро-Венгерской империи конца 19-ого, начала 20-ого столетия. Дух заведения перенесёт Вас в старую Прагу. Вы окунетесь в атмосферу быта Йозефа Швейка, который дружески встречает при входе с вкуснейшей кружкой чешского напитка!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="desk" class="container">
+            <div class="wrap">
                 <div class="desk">
-                    <h1 class="hero-title">Трактир "Зер Гут" рядом с вами!</h1>
-                    <div class="hero-subtitle">Мы работаем каждый день,чтобы сделать наших посетителей счастливыми!</div>
+                    <h1 class="desk-title">Доска объявлений</h1>
+                    <div class="desk-content">
+                        <div class="desk-content__elem">
+                            <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
+                        </div>
+                        <div class="desk-content__elem">
+                            <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
+                        </div>
+                        <div class="desk-content__elem">
+                            <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
+                        </div>
+                        <div class="desk-content__elem">
+                            <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,28 +112,43 @@
                     <span class="beer-title">Как наливают Pilsner Uequell</span>
                     <div class="beer-content">
                         <div class="beer-elem">
-                            <img>
-                            <span></span>
-                            <p></p>
+                            <img class="beer-elem__img"  src="image/beer/krugka1.png">
+                            <span class="beer-elem__title">Hladinka</span>
+                            <p class="beer-elem__description">Гладинка – это быстрый способ наливания пива «на раз», то есть за одно открытие крана (na jeden zátah), это вершина барменского мастерства. Пиво «на гладинку» имеет кремовую пену с ровной поверхностью. Пивной "шапки", поднимающейся над кружкой, в этом случае нет. Пена плотная и одновременно нежная (jemná pěna), без больших пузырьков. Как еще говорят специалисты, эта пена «мокрая» Многие считают пиво, налитое «на гладинку» самым вкусным.</p>
                         </div>
                         <div class="beer-elem">
-                            <img>
-                            <span></span>
-                            <p></p>
+                            <img class="beer-elem__img"  src="image/beer/krugka2.png">
+                            <span class="beer-elem__title">Mlíko</span>
+                            <p class="beer-elem__description">За одно открытие крана (na jeden ráz, "за один раз") кружка до краев заполняется густой кремовой пеной сметанной (сливочной) консистенции. На первый взгляд кажется, что в кружку налили молоко. Когда вы пьете эту пену, к своему удивлению чувствуете, что это не пена, а пиво. Если вам никогда прежде не приходилось пробовать такое пиво, то сделать это нужно обязательно. Магия «млика» в полной мере проявляется, если его пить прямо сразу, залпом (nejlépe na ex), даже не отходя от крана.</p>
                         </div>
                         <div class="beer-elem">
-                            <img>
-                            <span></span>
-                            <p></p>
+                            <img class="beer-elem__img" src="image/beer/krugka3.png">
+                            <span class="beer-elem__title">Šnyt</span>
+                            <p class="beer-elem__description">Этот способ пришел из тех старых времен, когда при открытии каждой новой бочки требовалось снять пробу. Пиво способом «шнит» наливается быстро, за одно открытие крана. Как только пена поднимется до верха, кран закрывается. Это любимый способ чепования у знатоков, экспертов: пиво имеет богатую пену и сохраняет все свои лучшие черты.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="menu" class="container">
             <div class="wrap">
                 <div class="menu">
-                    
+                    <h1 class="menu-title">Меню</h1>
+                    <!-- <div class="menu-content">
+                        <img class="menu-content_img" src="image/menu/book.jpg"> 
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container">
+            <div class="wrap">
+                <div class="footer">
+                    <div class="footer-contact">
+                        <h1 class="footer-contact__title">Контакты</h1>
+                    </div>
+                    <div class="footer-description">
+                        <img class="footer-description_img" src="image/footer/warning.png"> 
+                    </div>
                 </div>
             </div>
         </div>
