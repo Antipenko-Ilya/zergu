@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: "Pointedly";   
+    src: url("../fonts/Pointedly.otf");
+}
 .container {
     background: url(../image/container/container-bg.jpg);
 }
@@ -30,11 +34,18 @@
     width: 20%;
     height: auto;
 }
+.navbar {
+    display: flex;
+}
 .navbar-link {
     margin-left: 25px;
     text-decoration: none;
     color: #FFC011;
     font-size: 36px;
+    transition: .3s;
+}
+.navbar-link:hover {
+    transform: scale(1.1)
 }
 .header-contact {
     font-size: 20px;
@@ -54,10 +65,11 @@
 }
 .hero-title {
     padding: 0px 20px;
-    font-size: 80px;
+    font-size: 100px;
     color: #FFC011;
     font-weight: normal;
-    font-family: Porkchop;
+    font-family: "Pointedly";
+    letter-spacing: 4px;
     text-align: center;
 }
 .hero-subtitle {
@@ -78,7 +90,7 @@
     width: 95%;
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     text-align: center;
     font-weight: normal;
 }
@@ -126,6 +138,18 @@
     width: 35%;
     height: auto;
 }
+.contact-content__left-map img {
+    transition: .4s;
+}
+.contact-content__left-map:hover img {
+    transform: scale(1.15) translateY(-8px);
+}
+.contact-content__left-map span {
+    transition: .3s;
+}
+.contact-content__left-map:hover span {
+    color: #ffd767;
+}
 .contact-content__right {
     width: 50%;
     display: flex;
@@ -151,6 +175,7 @@
     text-align: center;
     font-family: Abibas;
     font-weight: 900;
+    letter-spacing: 2px;
 }
 .contact-content__right-content_text {
     text-align: center;
@@ -175,6 +200,11 @@
     padding: 10px;
     outline: none;
     border: none;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+.contact-content__right-content_btn:hover {
+    transform: scale(1.1);
 }
 
 .about {
@@ -193,7 +223,7 @@
 .about-title {
     font-size: 74px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
 }
@@ -233,7 +263,7 @@
 }
 .about-content__elem-text {
     font-family: Abibas;
-    font-size: 15px;
+    font-size: 16.5px;
     margin-bottom: 4px;
 }
 .about-content__elem-img {
@@ -259,14 +289,14 @@
 .beer-title {
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
 }
 .beer-content {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 20px;
 }
 .beer-elem {
@@ -292,14 +322,14 @@
 }
 .desk {
     padding-top: 40px;
-    background: url(../image/desk/desk-bg.png);
+    background-image: url(../image/desk/desk-bg.jpg);
     background-size: cover;
     height: 100%;
 }
 .desk-title {
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
@@ -309,6 +339,7 @@
     justify-content: space-evenly;
     align-items: start;
     flex-wrap: wrap;
+    
 }
 .desk-content__elem {
     margin-bottom: 20px;
@@ -319,8 +350,14 @@
     align-items: center;
     border-radius: 10px;
     background: url(../image/about/holst.jpg);
+
+}
+.desk-content__elem:hover img{
+    transform: translateY(-10px);
 }
 .desk-content__elem-img {
+    cursor: pointer;
+    transition: .3s;
     width: 80%;
     height: auto;
 }
@@ -339,7 +376,7 @@
 .menu_title {
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
@@ -350,6 +387,18 @@
     justify-content: center;
     align-items: center;
 }
+.menu-book_link {
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.menu_page__content {
+    line-height: 1.5em;
+    padding: 10px;
+}
+.menu_first-page {
+    padding: 20px;
+}
 .gallery {
     height: 100%;
     background: rgba(0, 0, 0, 0.9)
@@ -357,7 +406,7 @@
 .gallery-title {
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
@@ -372,12 +421,13 @@
 .footer-contact {
     width: 100%;
     height: 70%;
-    background: url(../image/header/navbar-bg.jpg);
+    background: url(../image/contacts_bg.png);
+    background-size: contain;
 }
 .footer-contact__title {
     font-size: 80px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Pointedly";
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
@@ -396,9 +446,18 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 30px black;
+
+}
+.footer-contacts_item {
+    font-size: 24px;
+    font-family: Abibas;
+    color: #FFC011;
+    margin-bottom: 30px;
+    text-align: center;
 }
 .footer-contact__left-title {
     font-size: 30px;
@@ -415,6 +474,14 @@
     font-family: Abibas;
     font-weight: 900;
 }
+.footer-contacts_links-wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-contacts_link {
+    max-width: 40px;
+}
 .footer-contact__right {
     border-radius: 40px;
     width: 450px;
@@ -428,8 +495,19 @@
     height: 30%;
     background: #000;
 }
+.modal_wrapper {
+    transition: .4s;
+    opacity: 0;
+    transform: translateY(100px);
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .modal {
-    margin: 0 auto;
     width: 500px;
     height: 600px;
     background: url(../image/modal/bg.png);
@@ -439,9 +517,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 15%;
-    left: 35%;
     z-index: 10;
 }
 .modal-content {
@@ -729,8 +804,19 @@
 	-webkit-border-radius:10px;
 	border-radius:10px;
 }
+.booklet .b-wrap {
+    font-family: Abibas;
+    background-image: url('../image/menu/holst.jpg')
+    !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .booklet .b-wrap-left  {
-	background:#fff url(../images/left_bg.jpg) no-repeat top left;
+	
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-topleft:10px;

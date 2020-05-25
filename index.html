@@ -37,6 +37,20 @@
         </style>
     </head>
     <body>
+        <div style="display: none;" class="modal_wrapper">
+            <div  class="modal">
+                <div class="modal-content">
+                    <h4 class="modal-title">Забронируйте прямо сейчас</h4>
+                    <form class="modal-form">
+                        <input class="modal-form_input" type="text" placeholder="Ваше имя">
+                        <input class="modal-form_input" type="text" placeholder="Ваша почта">
+                        <input class="modal-form_input" type="text" placeholder="Номер телефона">
+                        <!-- <span>Количество гостей</span> -->
+                        <button onclick="hideModal()" class="modal-btn">ЗАБРОНИРОВАТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <header class="header">
                 <img class="header-logo" src="image/header/logo-zergut.png" alt="logo">
@@ -99,7 +113,7 @@
                                     в Трактир "Зер Гут"
                                     напрямую из Чехии.</p>
                             </div>
-                            <p class="about-content__elem-text">Все вокруг создает уникальную, уютную атмосферу Великой Австро-Венгерской империи конца 19-ого, начала 20-ого столетия. Дух заведения перенесёт Вас в старую Прагу. Вы окунетесь в атмосферу быта Йозефа Швейка, который дружески встречает при входе с вкуснейшей кружкой чешского напитка!</p>
+                            <!-- <p class="about-content__elem-text">Все вокруг создает уникальную, уютную атмосферу Великой Австро-Венгерской империи конца 19-ого, начала 20-ого столетия. Дух заведения перенесёт Вас в старую Прагу. Вы окунетесь в атмосферу быта Йозефа Швейка, который дружески встречает при входе с вкуснейшей кружкой чешского напитка!</p> -->
                         </div>
                     </div>
                 </div>
@@ -167,30 +181,51 @@
                      
                     <div id="mybook" style="display:none;">
                         <div class="b-load">
+                           
                             <div>
-                                <img src="images/1.jpg" alt=""/>
-                                <h1>Slider Gallery</h1>
-                                <p>This tutorial is about creating a creative gallery with a
-                                    slider for the thumbnails. The idea is to have an expanding
-                                    thumbnails area which opens once an album is chosen.
-                                    The thumbnails will scroll to the end and move back to
-                                    the first image. The user can scroll through the thumbnails
-                                    by using the slider controls. When a thumbnail is clicked,
-                                    it moves to the center and the full image preview opens.</p>
-                                <a href="" class="article">ARTICLE</a>
-                                <a href="" class="demo">DEMO</a>
+                                <div class="menu_first-page">
+                                    <div class="menu-book_link">Горячие закуски к пиву</div>
+                                    <div class="menu-book_link">Сеты к пиву</div>
+                                    <div class="menu-book_link">Холодные закуски</div>
+                                    <div class="menu-book_link">Салаты</div>
+                                    <div class="menu-book_link">Супы</div>
+                                    <div class="menu-book_link">Колбасный расколбас</div>
+                                    <div class="menu-book_link">Главный ход</div>
+                                    <div class="menu-book_link">Гриль /мангал</div>
+                                    <div class="menu-book_link">Прилоги</div>
+                                    <div class="menu-book_link">Соусы</div>
+                                    <div class="menu-book_link">Десерты</div>
+                                    <div class="menu-book_link">Пиво Точеное</div>
+                                </div>
                             </div>
+
                             <div>
-                                <img src="images/2.jpg" alt="" />
-                                <h1>Animated Portfolio Gallery</h1>
-                                <p>Today we will create an animated portfolio gallery with jQuery.
-                                    The gallery will contain a scroller for thumbnails and a
-                                    content area where we will display details about the portfolio
-                                    item. The image can be enlarged by clicking on it, making
-                                    it appear as an overlay.</p>
-                                <a href="" target="_blank" class="article">ARTICLE</a>
-                                <a href="" class="demo">DEMO</a>
+                             
+                                <div style="font-size: 25px; margin-bottom: 20px; text-align: center; padding-top: 10px;">Горячие закуски к пиву</div>
+                                <div class="menu_page__content">
+                                    Чесночные гренки с соусом Дор Блю 150/30 гр	180<br>
+                                    Куриные острые крылья с соусом BQ 250/50 гр	390<br>
+                                    Куриные сердечки с чесноком и гренками		250	<br>
+                                    Пивные креветки отварные, к пиву 200 гр		520<br>
+                                    Креветки жареные с чесноком 200 гр			520<br>
+                                    Креветки ботан 							690<br>
+                                    Жареные пивные креветки по-тайски 200/50 гр	630<br>
+                                    Креветки «Батерфляй» 150/30 гр				550<br>
+                                    (Королевские креветки в кляре с соусом Тар-тар)
+
+                                    Сулугуни жареный с соусом чили 100/30 гр		310<br>
+                                    Кольца кальмара с соусом тар-тар 100/30 гр		250<br>
+                                    Луковые кольца с соусом тар-тар 100/30 гр		190<br>
+                                    Фиш & Чипс с соусом тар-тар 100/120/30 гр		320<br>
+                                    Мидии жареные с соусом Дор Блю 400 гр		540<br>
+                                    Мидии жареные с соусом песто 400 гр			540<br>
+
+                                    Краб волосатик 1 шт						1900<br>
+                                    Клешни краба-стригуна 1000 гр				2700<br>
+                                </div>
+
                             </div>
+
                             <div>
                                 <img src="images/3.jpg" alt="" />
                                 <h1>Annotation Overlay Effect</h1>
@@ -391,7 +426,7 @@
                     <div class="footer-contact">
                         <h1 class="footer-contact__title">Контакты</h1>
                         <div class="footer-contact__wrap">
-                            <div class="footer-contact__left">
+                            <!-- <div class="footer-contact__left">
                                 <h6 class="footer-contact__left-title">Адрес</h6>
                                 <span class="footer-contact__left-description">
                                     Щелковский р-н<br/>
@@ -402,6 +437,23 @@
                                 <span class="footer-contact__left-description">+7(965) 330-44-00</span>
                                 <h6 class="footer-contact__left-title">Email</h6>
                                 <span class="footer-contact__left-description">zergut-2016@mail.ru</span>
+                            </div> -->
+                            <div class="footer-contact__left">
+                                <div class="footer-contacts_item">
+                                    Щелковский р-н<br/>
+                                    с. Анискино<br/>
+                                    ул. Советская 8А
+                                </div>
+                                <div class="footer-contacts_item">
+                                    +7(965) 330-44-00
+                                </div>
+                                <div class="footer-contacts_item">
+                                    zergut-2016@mail.ru
+                                </div>
+                                <div class="footer-contacts_links-wrapper">
+                                    <img src="/image/contacts/vk.png" class="footer-contacts_link">
+                                    <img src="/image/contacts/inst.png" class="footer-contacts_link">
+                                </div>
                             </div>
                             <div class="footer-contact__right">
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ca75e9220dc22c353af90744025d6146e9bf208978a33faed03bf7774a62cfe&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -414,18 +466,7 @@
                 </div>
             </div>
         </div>
-        <div style="display: none;" class="modal">
-            <div class="modal-content">
-                <h4 class="modal-title">Забронируйте прямо сейчас</h4>
-                <form class="modal-form">
-                    <input class="modal-form_input" type="text" placeholder="Ваше имя">
-                    <input class="modal-form_input" type="text" placeholder="Ваша почта">
-                    <input class="modal-form_input" type="text" placeholder="Номер телефона">
-                    <!-- <span>Количество гостей</span> -->
-                    <button onclick="hideModal()" class="modal-btn">ЗАБРОНИРОВАТЬ</button>
-                </form>
-            </div>
-        </div>
+       
         <script src="js/script.js"></script>
     </body>
 </html>
