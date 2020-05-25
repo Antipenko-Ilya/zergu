@@ -24,3 +24,13 @@ function showModal(){
         document.addEventListener('click', hideModal);
     }
 }
+
+function showMenu() {
+    document.querySelector('.navbar').style.display = "flex";
+    setTimeout(()=>document.addEventListener('click', hideMenu));
+}
+
+function hideMenu() {
+    document.querySelector('.navbar').style.display = "none";
+    document.removeEventListener('click', hideMenu);
+}

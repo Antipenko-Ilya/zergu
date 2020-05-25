@@ -51,6 +51,9 @@
     font-size: 20px;
     color: #fff;
 }
+#burger {
+    display: none;
+}
 
 .hero {
     min-height: 100%;
@@ -205,6 +208,31 @@
 }
 .contact-content__right-content_btn:hover {
     transform: scale(1.1);
+}
+
+.contact-content__left-adres {
+    width: 400px;
+    background-image: url(../image/contact/adres.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 40px 50px 20px 50px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-content__left-element {
+    font-size: 25px;
+    font-family: Abibas;
+    text-align: center;
+}
+
+.contact-content__left-element_title {
+    font-size: 42px;
 }
 
 .about {
@@ -763,6 +791,32 @@
     }
     .book_wrapper {
         transform: scale(0.55);
+    }
+
+    /* navmenu adaptive */
+    .navbar {
+        display: none;
+
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 40px;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navbar-link {
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+    #burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: black;
     }
     
 }
