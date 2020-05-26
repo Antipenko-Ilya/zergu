@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    overflow-x: hidden;
+}
 @font-face {
     font-family: "Pointedly";   
     src: url("../fonts/Pointedly.otf");
@@ -273,6 +276,9 @@
     background-size: cover;
     background-position: bottom;
     min-height: 550px;
+
+    transform-origin: bottom;
+    transform: scale(1.15);
 }
 .about-content {
     color: #000;
@@ -304,6 +310,7 @@
 .beer {
     padding-top: 40px;
     background: url(../image/beer/beer-bg.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,6 +354,10 @@
     color: #fff;
     font-family: Abibas;
     text-align: center;
+    font-size: 18px;
+}
+.beer-elem__img {
+    max-width: 300px;
 }
 .desk {
     padding-top: 40px;
@@ -633,6 +644,7 @@
     }
     .beer-elem__img {
         width: 90%;
+        
         height: auto;
     }
     
@@ -668,7 +680,7 @@
     }
     .beer-elem__description {
         width: 90%;
-        font-size: 15px;
+        font-size: 18px;
     }
     .footer-contact__right {
         border-radius: 40px;
@@ -697,7 +709,7 @@
     
     .beer-elem__description {
         width: 76%;
-        font-size: 14px;
+        font-size: 16px;
     }
     .beer-elem__img {
         width: 90%;
@@ -710,7 +722,7 @@
         height: 230px;
     }
     .beer-elem {
-        width: 25%;
+        width: 30%;
         justify-content: flex-start;
     }
     .beer-elem__title {
@@ -718,7 +730,7 @@
     }
     .beer-elem__description {
         width: 76%;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .book_wrapper {
@@ -728,6 +740,13 @@
     }
     
 }
+
+@media (max-width: 1000px) {
+    .about-content_wrap {
+        transform: none;
+    }
+}
+
 @media (max-width: 800px) {
     .hero-title {
         font-size: 60px;
@@ -780,6 +799,7 @@
     }
     .beer-elem__img {
         width: 65%;
+        
         height: auto;
     }
     .beer-elem__description {
@@ -789,6 +809,13 @@
     .footer-contact__wrap {
         flex-direction: column;
     }
+    .footer-contact__left {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-contact {
+        height: auto;
+    }
     .book_wrapper {
         transform: scale(0.55);
     }
@@ -797,7 +824,7 @@
     .navbar {
         display: none;
 
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
         padding-top: 40px;
         position: fixed;
         top:0;
@@ -807,16 +834,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        z-index: 110;
     }
     .navbar-link {
-        font-size: 55px;
+        font-size: 40px;
         margin-bottom: 40px;
     }
     #burger {
+        background-image: url(../image/burger.png);
+        background-size: cover;
         display: block;
         width: 40px;
         height: 40px;
-        background-color: black;
+        cursor: pointer;
     }
     
 }
@@ -829,13 +859,37 @@
     
 }
 @media (max-width: 550px) {
+    .about-content_wrap {
+        background: none;
+    }
     .book_wrapper {
         transform: scale(0.38);
     }
+    .contact-content__left-adres {
+        transform: scale(1);
+        width: 100%;
+        background-position: center;
+        height: 250px;
+    }
+    .contact-content__right-content {
+        transform: scale(0.8);
+    }
+    .contact-content__left-element {
+        font-size: 20px;
+    }
+    .contact-content__left-element_title {
+        font-size: 30px;
+    }
+    .footer-contact__right {
+        width: 300px;
+        height: 300px;
+    }
     
 }
-@media (max-width: 300px) {
-    
+@media (max-width: 380px) {
+    .book_wrapper {
+        transform: scale(0.25);
+    }
 }
 
 
