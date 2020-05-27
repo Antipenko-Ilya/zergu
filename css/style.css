@@ -4,6 +4,20 @@
 }
 html {
     overflow-x: hidden;
+    
+}
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: rgb(49, 49, 49);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #FFC011;
 }
 @font-face {
     font-family: "Pointedly";   
@@ -431,9 +445,28 @@ html {
     cursor: pointer;
 
 }
+.b-wrap>div {
+    width: 100%;
+}
 .menu_page__content {
     line-height: 1.5em;
     padding: 10px;
+}
+.menu_page__element {
+    margin-bottom: 15px;
+}
+.menu_page__element__title {
+    font-size: 17px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.menu_page__element__title_wrapper {
+    display: flex;
+}
+.menu_page__element__gr {
+    font-size: 12px;
+    margin-left: 5px;
 }
 .menu_first-page {
     padding: 20px;
@@ -551,7 +584,7 @@ html {
     height: 600px;
     background: url(../image/modal/bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -603,9 +636,17 @@ html {
     min-height: 25px;
     padding: 10px;
     outline: none;
+
+    transition: .3s;
 }
-
-
+.modal-btn:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 2000px) {
+    .book_wrapper{
+        transform: scale(1.2);
+    }
+}
 @media (max-width: 1500px) {
     .contact-title {
         font-size: 70px;
@@ -689,6 +730,9 @@ html {
     }
 }
 @media (max-width: 1200px) {
+    .book_wrapper {
+        transform: scale(1);
+    }
     .contact-content__left-img {
         width: 25%;
         height: auto;
@@ -748,6 +792,10 @@ html {
 }
 
 @media (max-width: 800px) {
+    .modal {
+        transform: scale(0.7);
+        
+    }
     .hero-title {
         font-size: 60px;
     }
@@ -859,6 +907,10 @@ html {
     
 }
 @media (max-width: 550px) {
+    .modal {
+        width: 430px;
+        height: 535px;
+    }
     .about-content_wrap {
         background: none;
     }
@@ -889,6 +941,13 @@ html {
 @media (max-width: 380px) {
     .book_wrapper {
         transform: scale(0.25);
+    }
+    .modal{
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+    .modal-title {
+        font-size: 26px;
     }
 }
 
@@ -1014,6 +1073,7 @@ html {
 }
 a#next_page_button,
 a#prev_page_button{
+   
 	display:none;
 	position:absolute;
 	width:41px;
@@ -1023,6 +1083,7 @@ a#prev_page_button{
 	top:50%;
 	background:transparent url(../images/buttons.png) no-repeat 0px -40px;
 }
+
 a#prev_page_button{
 	left:-30px;
 }

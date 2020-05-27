@@ -52,3 +52,78 @@ $(function(){
             return false;
     });
 });
+
+const menuData1 = [
+    {
+        text: 'Куриные острые крылья с соусом BQ',
+        gr: '250/50 гр',
+        price: '390',
+        descr: ''
+    },
+    { 		
+        text: ' Пивные креветки отварные, к пиву',
+        gr: '200 гр',
+        price: '520',
+        descr: ''
+    }
+]
+
+const menuData2 = [
+    {
+        text: 'Большой пивной сет на компанию',
+        gr: '820/200 гр',
+        price: '1100',
+        descr: ''
+    },
+    { 		
+        text: ' Пивные креветки отварные, к пиву',
+        gr: '200 гр',
+        price: '520',
+        descr: ''
+    }
+]
+//test
+
+function createMenu(index, menuData) {
+    menuData.map(item => {
+        const menu_page__element = document.createElement('div');
+        menu_page__element.className = 'menu_page__element';
+        
+        const menu_page__element__title = document.createElement('div');
+        menu_page__element__title.className = 'menu_page__element__title';
+            const menu_page__element__title_wrapper = document.createElement('div');
+            menu_page__element__title_wrapper.className = 'menu_page__element__title_wrapper';
+        
+                const menu_page__element__text  = document.createElement('div');
+                menu_page__element__text.className = 'menu_page__element__text';
+                menu_page__element__text.innerHTML=item.text
+                menu_page__element__title_wrapper.appendChild(menu_page__element__text);
+                
+        
+                const menu_page__element__gr= document.createElement('div');
+                menu_page__element__gr.className = 'menu_page__element__gr';
+                menu_page__element__gr.innerHTML=item.gr
+                menu_page__element__title_wrapper.appendChild(menu_page__element__gr);
+                
+            menu_page__element__title.appendChild(menu_page__element__title_wrapper);
+        
+            const menu_page__element__price = document.createElement('div');
+            menu_page__element__price.className = 'menu_page__element__price';
+            menu_page__element__price.innerHTML=item.price
+            menu_page__element__title.appendChild(menu_page__element__price);
+        
+        const menu_page__element_description = document.createElement('div');
+        menu_page__element_description.className = 'menu_page__element_description';
+        menu_page__element_description.innerHTML = item.descr;
+        
+        menu_page__element.appendChild(menu_page__element__title);
+        menu_page__element.appendChild(menu_page__element_description);
+        
+        document.querySelector('.b-load>div:nth-child('+index+') .menu_page__content').appendChild(menu_page__element)
+    })
+
+
+}
+
+createMenu(2, menuData1)
+createMenu(3, menuData2)
