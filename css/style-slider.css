@@ -4,7 +4,9 @@
     margin: auto;
 }
 .slides {
+    display: none;
     margin: 0 auto;
+    transition: .4s;
 }
 .prev, .next {
     cursor: pointer;
