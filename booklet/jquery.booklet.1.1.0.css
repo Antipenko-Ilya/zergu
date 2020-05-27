@@ -43,7 +43,7 @@
 	
    	/* Overlay Controls */
 	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:50%;}
-	.booklet .b-overlay-prev {left:0;}
+	.booklet .b-overlay-prev {left:0;visibility: hidden;}
 	.booklet .b-overlay-next {right:0;}
 	
    	/* Tab Controls */

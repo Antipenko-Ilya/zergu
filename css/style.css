@@ -445,6 +445,9 @@ html {
     cursor: pointer;
 
 }
+.menu-book_link:hover {
+    color: rgb(119, 87, 0);
+}
 .b-wrap>div {
     width: 100%;
 }
@@ -468,8 +471,12 @@ html {
     font-size: 12px;
     margin-left: 5px;
 }
+.menu_page__element_description {
+    font-size: 14px;
+}
 .menu_first-page {
     padding: 20px;
+    
 }
 .gallery {
     height: 100%;
@@ -547,6 +554,7 @@ html {
     font-weight: 900;
 }
 .footer-contacts_links-wrapper {
+    max-width: 250px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -641,6 +649,34 @@ html {
 }
 .modal-btn:hover {
     transform: scale(1.1);
+}
+
+.modal-after_wrapper {
+    transition: .4s;
+
+    transform: translateY(100px);
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+   
+    z-index: 300;
+}
+.modal-after {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background: url(../image/contact/holst.png);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Abibas;
+    color:#FFC011;
 }
 @media (max-width: 2000px) {
     .book_wrapper{
@@ -939,6 +975,13 @@ html {
     
 }
 @media (max-width: 380px) {
+    .footer-contacts_item {
+        margin-bottom: 20px;
+    }
+    .desk-content__elem {
+        width: 150px;
+        height: 150px;
+    }
     .book_wrapper {
         transform: scale(0.25);
     }
@@ -1063,10 +1106,6 @@ html {
 	margin:10px 0px 5px 35px;
 	width:300px;
 	padding:4px;
-	border:1px solid #ddd;
-	-moz-box-shadow:1px 1px 1px #fff;
-	-webkit-box-shadow:1px 1px 1px #fff;
-	box-shadow:1px 1px 1px #fff;
 }
 .booklet .b-wrap-right img{
 	border:1px solid #E6E3C2;
@@ -1080,8 +1119,11 @@ a#prev_page_button{
 	height:40px;
 	cursor:pointer;
 	margin-top:-20px;
-	top:50%;
-	background:transparent url(../images/buttons.png) no-repeat 0px -40px;
+    top:50%;
+    background: url(../image/menu/pngwave.png);
+    background-size: contain;
+    transition: .3s;
+    filter: invert(71%) sepia(72%) saturate(756%) hue-rotate(347deg) brightness(104%) contrast(102%);
 }
 
 a#prev_page_button{
@@ -1089,11 +1131,11 @@ a#prev_page_button{
 }
 a#next_page_button{
 	right:-30px;
-	background-position:-41px -40px;
+	transform: rotateZ(180deg);
 }
 a#next_page_button:hover{
-	background-position:-41px 0px;
+	transform: rotateZ(180deg) scale(1.2);
 }
 a#prev_page_button:hover{
-	background-position:0px 0px;
+	transform:  scale(1.2);
 }
