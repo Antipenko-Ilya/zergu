@@ -499,7 +499,7 @@ html {
 }
 .footer-contact {
     width: 100%;
-    height: 70%;
+    height: 100%;
     background: url(../image/contacts_bg.png);
     background-size: contain;
 }
@@ -569,11 +569,15 @@ html {
 }
 .footer-description {
     display: flex;
+    width: 100%;
+    height: 8%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 30%;
-    background: #000;
+    background: rgba(0, 0, 0, 0.9)
+}
+.footer-description__text {
+    color: #FFC011;
+    font-size: 18px;
 }
 .modal_wrapper {
     transition: .4s;
@@ -678,6 +682,19 @@ html {
     font-family: Abibas;
     color:#FFC011;
 }
+.btn_up{
+    right: 50px;
+    margin: 0;
+    font-size: 90px;
+    position: fixed;
+    bottom: 50px;
+    outline:none;
+    color:#ffd200;
+    line-height: 30px;
+    text-decoration: none;
+    padding: 0px 0 0 28px;
+    cursor:pointer;
+  }
 @media (max-width: 2000px) {
     .book_wrapper{
         transform: scale(1.2);

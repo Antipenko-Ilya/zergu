@@ -568,14 +568,20 @@ function createMenu(index, menuData) {
 }
 const pages = 19;
 for (let i=0; i<pages;i++) {
-    console.log(i)
-    createMenu(i+2, globalData['menuData'+(i+2)])
+    createMenu(i+2, globalData['menuData'+(i+2)]);
 }
 
 function activateLeftPage() {
-    document.querySelector('.b-overlay-prev').style.visibility = 'visible'
+    document.querySelector('.b-overlay-prev').style.visibility = 'visible';
 }
-document.querySelector('.menu-book_link').addEventListener('click', ()=>{
+// перелистование меню
+document.querySelector('.menu_first-page').onclick = function(e){
     document.querySelector('#next_page_button').click();
-    setTimeout(()=>document.querySelector('#next_page_button').click(), 400) 
-})
+    if(+e.target.getAttribute('data-str') > 1){
+        let delay = 400;
+        for(let j=1; j <= +e.target.getAttribute('data-str')-1; j++){
+            setTimeout(()=>document.querySelector('#next_page_button').click(), delay);
+            delay = delay + 400;
+        }
+    }
+}

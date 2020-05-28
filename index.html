@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-slider.css">
+        <link rel="stylesheet" href="css/style-slider.css"> 
+        <link rel="stylesheet" href="css/animatons.css"> 
+
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
         <title>Traktir-Zergut</title>
                
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -63,11 +66,11 @@
             <header class="header">
                 <img class="header-logo" src="image/header/logo-zergut.png" alt="logo">
                 <div class="navbar">
-                    <a href="#contact" class="navbar-link">О нас</a>
-                    <a href="#menu" class="navbar-link">Меню</a>
-                    <a href="#desk" class="navbar-link">Анонс</a>
-                    <a href="#gallery" class="navbar-link">Галерея</a>
-                    <a href="#footer" class="navbar-link">Контакты</a>
+                    <a href="#contact" class="navbar-link wow fadeInLeft" data-wow-delay="0.6s">О нас</a>
+                    <a href="#menu" class="navbar-link wow fadeInLeft" data-wow-delay="0.5s">Меню</a>
+                    <a href="#desk" class="navbar-link wow fadeInLeft" data-wow-delay="0.4s">Анонс</a>
+                    <a href="#gallery" class="navbar-link wow fadeInLeft" data-wow-delay="0.3s">Галерея</a>
+                    <a href="#footer" class="navbar-link wow fadeInLeft" data-wow-delay="0.2s">Контакты</a>
                 </div>
                 <div onclick="showMenu()" id="burger"></div>
             </header>
@@ -75,18 +78,18 @@
         <div class="container">
             <div class="wrap">
                 <div class="hero">
-                    <h1 class="hero-title">Настоящий Чешский Трактир</h1>
-                    <div class="hero-subtitle">Насладитесь чешской кухней и попробуйте оригинальный Pilsner</div>
+                    <h1 class="hero-title wow fadeInUp" data-wow-delay="0.6s">Настоящий Чешский Трактир</h1>
+                    <div class="hero-subtitle wow fadeInUp" data-wow-delay="0.8s">Насладитесь чешской кухней и попробуйте оригинальный Pilsner</div>
                 </div>
             </div>
         </div>
         <div id="contact" class="container">
             <div class="wrap">
                 <div class="contact">
-                    <h1 class="contact-title">Трактир "Зер Гут" рядом с вами!</h1>
-                    <div class="contact-subtitle">Мы работаем каждый день,чтобы сделать наших посетителей счастливыми!</div>
+                    <h1 class="contact-title wow fadeIn" data-wow-delay="0.4s">Трактир "Зер Гут" рядом с вами!</h1>
+                    <div class="contact-subtitle wow fadeIn" data-wow-delay="0.4s">Мы работаем каждый день,чтобы сделать наших посетителей счастливыми!</div>
                     <div class="contact-content">
-                        <div class="contact-content__left">
+                        <div class="contact-content__left wow fadeInLeft" data-wow-delay="0.6s">
                             <!-- <img class="contact-content__left-adres" src="image/contact/adres.png"> -->
                             <div class="contact-content__left-adres">
                                 <div class="contact-content__left-element contact-content__left-element_title">
@@ -108,7 +111,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="contact-content__right">
+                        <div class="contact-content__right wow fadeInRight" data-wow-delay="0.6s">
                             <div class="contact-content__right-content">
                                 <h4 class="contact-content__right-content-title">БРОНИРУЙТЕ ПРЯМО СЕЙЧАС!</h4>
                                 <div class="contact-content__right-content_text">При бронирование столика на четверых и депозите от 5000 руб, мы привезем Вас в Трактир "Зер Гут" - БЕСПЛАТНО!</div>
@@ -146,22 +149,28 @@
                 <div class="desk">
                     <h1 class="desk-title">Доска объявлений</h1>
                     <div class="desk-content">
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.1s">
                             <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
                         </div>
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.2s">
                             <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
                         </div>
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.3s">
                             <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
                         </div>
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.4s">
                             <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
                         </div>
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.5s">
                             <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
                         </div>
-                        <div class="desk-content__elem">
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.6s">
+                            <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
+                        </div>
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.7s">
+                            <img class="desk-content__elem-img" src="image/desk/desk1.jpg">
+                        </div>
+                        <div class="desk-content__elem wow fadeInUp" data-wow-delay="0.8s">
                             <img class="desk-content__elem-img" src="image/desk/desk2.jpg">
                         </div>
                     </div>
@@ -174,19 +183,19 @@
                     <span class="beer-title">Как правильно наливают Pilsner</span>
                     <div class="beer-content">
                         <div class="beer-elem">
-                            <img class="beer-elem__img"  src="image/beer/krugka1.png">
-                            <span class="beer-elem__title">Hladinka</span>
-                            <p class="beer-elem__description">Гладинка – это быстрый способ наливания пива «на раз», то есть за одно открытие крана (na jeden zátah), это вершина барменского мастерства. Пиво «на гладинку» имеет кремовую пену с ровной поверхностью. Пивной "шапки", поднимающейся над кружкой, в этом случае нет. Пена плотная и одновременно нежная (jemná pěna), без больших пузырьков. Как еще говорят специалисты, эта пена «мокрая» Многие считают пиво, налитое «на гладинку» самым вкусным.</p>
+                            <img class="beer-elem__img wow fadeInLeft" data-wow-delay="0.6s"  src="image/beer/krugka1.png">
+                            <span class="beer-elem__title wow fadeInLeft" data-wow-delay="1.2s">Hladinka</span>
+                            <p class="beer-elem__description wow fadeInLeft" data-wow-delay="1.2s">Гладинка – это быстрый способ наливания пива «на раз», то есть за одно открытие крана (na jeden zátah), это вершина барменского мастерства. Пиво «на гладинку» имеет кремовую пену с ровной поверхностью. Пивной "шапки", поднимающейся над кружкой, в этом случае нет. Пена плотная и одновременно нежная (jemná pěna), без больших пузырьков. Как еще говорят специалисты, эта пена «мокрая» Многие считают пиво, налитое «на гладинку» самым вкусным.</p>
                         </div>
                         <div class="beer-elem">
-                            <img class="beer-elem__img"  src="image/beer/krugka2.png">
-                            <span class="beer-elem__title">Mliko</span>
-                            <p class="beer-elem__description">За одно открытие крана (na jeden ráz, "за один раз") кружка до краев заполняется густой кремовой пеной сметанной (сливочной) консистенции. На первый взгляд кажется, что в кружку налили молоко. Когда вы пьете эту пену, к своему удивлению чувствуете, что это не пена, а пиво. Если вам никогда прежде не приходилось пробовать такое пиво, то сделать это нужно обязательно. Магия «млика» в полной мере проявляется, если его пить прямо сразу, залпом (nejlépe na ex), даже не отходя от крана.</p>
+                            <img class="beer-elem__img wow fadeInLeft" data-wow-delay="0.4s"  src="image/beer/krugka2.png">
+                            <span class="beer-elem__title wow fadeInLeft" data-wow-delay="1s">Mliko</span>
+                            <p class="beer-elem__description wow fadeInLeft" data-wow-delay="1s">За одно открытие крана (na jeden ráz, "за один раз") кружка до краев заполняется густой кремовой пеной сметанной (сливочной) консистенции. На первый взгляд кажется, что в кружку налили молоко. Когда вы пьете эту пену, к своему удивлению чувствуете, что это не пена, а пиво. Если вам никогда прежде не приходилось пробовать такое пиво, то сделать это нужно обязательно. Магия «млика» в полной мере проявляется, если его пить прямо сразу, залпом (nejlépe na ex), даже не отходя от крана.</p>
                         </div>
                         <div class="beer-elem">
-                            <img class="beer-elem__img" src="image/beer/krugka3.png">
-                            <span class="beer-elem__title">Snyt</span>
-                            <p class="beer-elem__description">Этот способ пришел из тех старых времен, когда при открытии каждой новой бочки требовалось снять пробу. Пиво способом «шнит» наливается быстро, за одно открытие крана. Как только пена поднимется до верха, кран закрывается. Это любимый способ чепования у знатоков, экспертов: пиво имеет богатую пену и сохраняет все свои лучшие черты.</p>
+                            <img class="beer-elem__img wow fadeInLeft" data-wow-delay="0.2s" src="image/beer/krugka3.png">
+                            <span class="beer-elem__title wow fadeInLeft" data-wow-delay="0.8s">Snyt</span>
+                            <p class="beer-elem__description wow fadeInLeft" data-wow-delay="0.8s">Этот способ пришел из тех старых времен, когда при открытии каждой новой бочки требовалось снять пробу. Пиво способом «шнит» наливается быстро, за одно открытие крана. Как только пена поднимется до верха, кран закрывается. Это любимый способ чепования у знатоков, экспертов: пиво имеет богатую пену и сохраняет все свои лучшие черты.</p>
                         </div>
                     </div>
                 </div>
@@ -194,10 +203,10 @@
         </div>
         <div id="menu" class="container">
             <div class="wrap wrap_menu">
-                <div class="menu_title">
+                <div class="menu_title wow fadeIn" data-wow-delay="0.2s">
                     Наше меню
                 </div>
-                <div onclick="activateLeftPage()" class="book_wrapper">
+                <div onclick="activateLeftPage()" class="book_wrapper wow fadeIn" data-wow-delay="0.4s">
                     <a id="next_page_button"></a>
                     <a id="prev_page_button"></a>
                      
@@ -205,18 +214,18 @@
                         <div class="b-load">
                             <div>
                                 <div class="menu_first-page">
-                                    <div class="menu-book_link">Горячие закуски к пиву</div>
-                                    <div class="menu-book_link">Сеты к пиву</div>
-                                    <div class="menu-book_link">Холодные закуски</div>
-                                    <div class="menu-book_link">Салаты</div>
-                                    <div class="menu-book_link">Супы</div>
-                                    <div class="menu-book_link">Колбасный расколбас</div>
-                                    <div class="menu-book_link">Главный ход</div>
-                                    <div class="menu-book_link">Гриль /мангал</div>
-                                    <div class="menu-book_link">Прилоги</div>
-                                    <div class="menu-book_link">Соусы</div>
-                                    <div class="menu-book_link">Десерты</div>
-                                    <div class="menu-book_link">Пиво Точеное</div>
+                                    <div data-str="1" class="menu-book_link">Горячие закуски к пиву</div>
+                                    <div data-str="1" class="menu-book_link">Сеты к пиву</div>
+                                    <div data-str="2" class="menu-book_link">Холодные закуски</div>
+                                    <div data-str="3" class="menu-book_link">Салаты</div>
+                                    <div data-str="4" class="menu-book_link">Супы</div>
+                                    <div data-str="5" class="menu-book_link">Колбасный расколбас</div>
+                                    <div data-str="5" class="menu-book_link">Главный ход</div>
+                                    <div data-str="6" class="menu-book_link">Мангал</div>
+                                    <div data-str="7" class="menu-book_link">Прилоги</div>
+                                    <div data-str="7" class="menu-book_link">Соусы</div>
+                                    <div data-str="8" class="menu-book_link">Десерты</div>
+                                    <div data-str="8" class="menu-book_link">Пиво Точеное</div>
                                 </div>
                             </div>
 
@@ -398,40 +407,42 @@
             <div class="wrap">
                 <div class="gallery">
                     <h1 class="gallery-title">Галерея</h1>
-                    <div class="gallery-content">
-                        <div class="slides fade">
-                            <div class="slide-number">1/8</div>
-                            <img class="slide-img" src="images__slider/slide-1.JPG" alt="slide-1">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">2/8</div>
-                            <img class="slide-img" src="images__slider/slide-2.JPG" alt="slide-2">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">3/8</div>
-                            <img class="slide-img" src="images__slider/slide-3.JPG" alt="slide-3">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">4/8</div>
-                            <img class="slide-img" src="images__slider/slide-4.JPG" alt="slide-4">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">5/8</div>
-                            <img class="slide-img" src="images__slider/slide-8.JPG" alt="slide-5">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">6/8</div>
-                            <img class="slide-img" src="images__slider/slide-6.JPG" alt="slide-6">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">7/8</div>
-                            <img class="slide-img" src="images__slider/slide-7.JPG" alt="slide-7">
-                        </div>
-                        <div class="slides fade">
-                            <div class="slide-number">8/8</div>
-                            <img class="slide-img" src="images__slider/slide-8.JPG" alt="slide-8">
-                        </div>
+                    <div class="gallery-wrap">
                         <a class="prev" onclick="showSlides(-1)">&#10094</a>
+                        <div class="gallery-content">
+                            <div class="slides fade">
+                                <div class="slide-number">1/8</div>
+                                <img class="slide-img" src="images__slider/slide-1.JPG" alt="slide-1">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">2/8</div>
+                                <img class="slide-img" src="images__slider/slide-2.JPG" alt="slide-2">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">3/8</div>
+                                <img class="slide-img" src="images__slider/slide-3.JPG" alt="slide-3">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">4/8</div>
+                                <img class="slide-img" src="images__slider/slide-4.JPG" alt="slide-4">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">5/8</div>
+                                <img class="slide-img" src="images__slider/slide-8.JPG" alt="slide-5">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">6/8</div>
+                                <img class="slide-img" src="images__slider/slide-6.JPG" alt="slide-6">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">7/8</div>
+                                <img class="slide-img" src="images__slider/slide-7.JPG" alt="slide-7">
+                            </div>
+                            <div class="slides fade">
+                                <div class="slide-number">8/8</div>
+                                <img class="slide-img" src="images__slider/slide-8.JPG" alt="slide-8">
+                            </div>
+                        </div>
                         <a class="next" onclick="showSlides(1)">&#10095</a>
                     </div>
                 </div>
@@ -441,9 +452,9 @@
             <div class="wrap">
                 <div class="footer">
                     <div class="footer-contact">
-                        <h1 class="footer-contact__title">Контакты</h1>
+                        <h1 class="footer-contact__title wow fadeIn" data-wow-delay="0.2s">Контакты</h1>
                         <div class="footer-contact__wrap">
-                            <div class="footer-contact__left">
+                            <div class="footer-contact__left wow fadeInLeft" data-wow-delay="0.4s">
                                 <div class="footer-contacts_item">
                                     Щелковский р-н<br/>
                                     с. Анискино<br/>
@@ -456,23 +467,29 @@
                                     zergut-2016@mail.ru
                                 </div>
                                 <div class="footer-contacts_links-wrapper">
-                                    <img src="/image/contacts/vk.png" class="footer-contacts_link">
-                                    <img src="/image/contacts/inst.png" class="footer-contacts_link">
-                                    <img src="/image/contacts/wtsup.png" class="footer-contacts_link">
+                                    <a href="https://vk.com/tractirzergut"><img src="image/footer/vk.png" class="footer-contacts_link"></a>                            
+                                    <a href="https://instagram.com/tractir_zergut?igshid=1ggueyh4g29nx"> <img src="image/footer/instagram.png" class="footer-contacts_link"></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100022886700512"><img src="image/footer/facebook.png" class="footer-contacts_link"></a>
                                 </div>
                             </div>
-                            <div class="footer-contact__right">
+                            <div class="footer-contact__right wow fadeInRight" data-wow-delay="0.4s">
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ca75e9220dc22c353af90744025d6146e9bf208978a33faed03bf7774a62cfe&amp;lang=ru_RU&amp;scroll=true"></script>
                             </div>
                         </div>
                     </div>
                     <div class="footer-description">
-                        <!-- <img class="footer-description_img" src="image/footer/warning.png">  -->
+                        <span class="footer-description__text">© Трактир Зергут 2020</span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="goUp">
+            <img src="image/upload.png" class="btn_up">
+        </div>
        
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/wow.min.js "></script>
         <script src="js/script.js"></script>
     </body>
 </html>
