@@ -80,6 +80,7 @@ $(function(){
     $("a[href^='#']").click(function(){
             if (document.documentElement.clientWidth<800) {
                 document.querySelector('.navbar').style.display = 'none'
+                window.removeEventListener('click', hideMenu);
             }
             var _href = $(this).attr("href");
             $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, {
