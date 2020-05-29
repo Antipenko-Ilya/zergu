@@ -2,6 +2,7 @@
 const globalData = {
     menuData2: [
         {
+            isNew: true,
             text: 'Куриные острые крылья с соусом BBQ',
             gr: '250/50 гр',
             price: '390',
@@ -96,6 +97,7 @@ const globalData = {
             descr: 'Чесночные гренки, острые куриные крылья, сулугуни жареный, кольца кальмара, луковые кольца, запеченные картофельные дольки, соуса'
         },
         {
+            isNew: true,
             text: 'Сырный сет под пиво',
             gr: '',
             price: '990',
@@ -150,6 +152,7 @@ const globalData = {
     ],
     menuData7: [
         {
+            isNew: true,
             text: 'Салат Баварский',
             gr: '200 гр',
             price: '380',
@@ -355,6 +358,13 @@ const globalData = {
             price: '100',
             descr: ''
         },
+        {
+            isNew: true,
+            text: 'Перепелка на гриле',
+            gr: '1 шт.',
+            price: '450',
+            descr: ''
+        }
     ],
     menuData15: [
         {
@@ -530,9 +540,17 @@ function createMenu(index, menuData) {
     menuData.map(item => {
         const menu_page__element = document.createElement('div');
         menu_page__element.className = 'menu_page__element';
+
+        const menu_page__element__is_new = document.createElement('div');
+        menu_page__element__is_new.className = 'menu_page__element__is_new'
+        menu_page__element__is_new.innerHTML = item.isNew ? 'NEW' : '';
+        menu_page__element.appendChild(menu_page__element__is_new);
+
         
         const menu_page__element__title = document.createElement('div');
         menu_page__element__title.className = 'menu_page__element__title';
+
+            
             const menu_page__element__title_wrapper = document.createElement('div');
             menu_page__element__title_wrapper.className = 'menu_page__element__title_wrapper';
         

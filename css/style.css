@@ -722,7 +722,6 @@ html {
 }
 
 .warning {
-    background-image: url(/image/warning/bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
