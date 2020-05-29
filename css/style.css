@@ -486,6 +486,14 @@ html {
     padding: 20px;
     
 }
+.menu-mobail {
+    background: url(../image/menu/holst2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
 .gallery {
     height: 100%;
     background: rgba(0, 0, 0, 0.9)
@@ -692,7 +700,7 @@ html {
     color:#FFC011;
 }
 .btn_up{
-    right: 50px;
+    right: 10px;
     margin: 0;
     font-size: 90px;
     position: fixed;
@@ -714,6 +722,7 @@ html {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
+    color: #FFC011;
     display: none;
     justify-content: center;
     align-items: center;
