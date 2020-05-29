@@ -120,3 +120,23 @@ function showAfterSubmit() {
     modalAfter.style.display = "flex";
     setTimeout(()=> modalAfter.style.display = "none", 6000);
 }
+
+//warning
+setTimeout(()=>{
+    document.querySelector('.warning-wrapper').style.display = "flex";
+    setTimeout(()=>{
+        document.querySelector('.warning-wrapper').style.opacity='1';
+    })
+}, 1500)
+    
+function setAgeData(is18) {
+    document.querySelector('.warning-wrapper').style.opacity='0';
+    setTimeout(()=>{
+        document.querySelector('.warning-wrapper').style.display = "none";
+    }, 700)
+    if (!is18) {
+       Array.from(document.querySelectorAll('.adult_content')).forEach(item=>{
+           item.style.display="none";
+       })
+    }
+}

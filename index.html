@@ -41,6 +41,23 @@
         </style>
     </head>
     <body>
+        <div class="warning-wrapper">
+            <div class="warning">
+                <div class="warning__content">
+                    <div class="warning__content_text">
+                        Вам уже есть 18 лет?
+                    </div>
+                    <div class="warning__content_btns">
+                        <div onclick="setAgeData(1)" class="warning__content_btn">
+                            Да
+                        </div>
+                        <div onclick="setAgeData(0)" class="warning__content_btn">
+                            Нет
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div style="display: none;" class="modal_wrapper">
             <div  class="modal">
                 <div class="modal-content">
@@ -122,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="adult_content container">
             <div class="wrap">
                 <div class="about">
                     <h1 class="about-title">В Трактир "Зер Гут" хочется возвращаться</h1>
@@ -177,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="adult_content container">
             <div class="wrap wrap-beer">
                 <div class="beer">
                     <span class="beer-title">Как правильно наливают Pilsner</span>
@@ -254,7 +271,7 @@
                                     
                                 </div>
                             </div>
-                            <div>
+                            <div class="adult_content">
                                 <div style="font-size: 25px; margin-bottom: 20px; text-align: center; padding-top: 10px;">Сеты к пиву</div>
                                 <div class="menu_page__content">
                                     
@@ -339,19 +356,19 @@
                                    
                                 </div>
                             </div>
-                            <div>
+                            <div class="adult_content">
                                 <div style="font-size: 25px; margin-bottom: 20px; text-align: center; padding-top: 10px;">Пиво Точеное</div>
                                 <div class="menu_page__content">
                                    
                                 </div>
-                            </div>
-                            <div>
+                            </div class="adult_content">
+                            <div class="adult_content">
                                 <div style="font-size: 25px; margin-bottom: 20px; text-align: center; padding-top: 10px;">Бутылочное</div>
                                 <div class="menu_page__content">
                                    
                                 </div>
                             </div>
-                            <div>
+                            <div class="adult_content">
                                 <div style="font-size: 25px; margin-bottom: 20px; text-align: center; padding-top: 10px;">С собой </div>
                                 <div class="menu_page__content">
                                    
