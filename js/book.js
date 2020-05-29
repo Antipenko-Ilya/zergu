@@ -579,11 +579,9 @@ function createMenu(index, menuData) {
         menu_page__element.appendChild(menu_page__element__title);
         menu_page__element.appendChild(menu_page__element_description);
 
-        if(document.documentElement.clientWidth > 800){
-            document.querySelector('.menu_page__content').appendChild(menu_page__element);
-        }
-        
-        document.querySelector('.b-load>div:nth-child('+index+') .menu_page__content').appendChild(menu_page__element);
+        if(document.documentElement.clientWidth < 800){
+            document.querySelector('.menu-mobail .menu_page__content').appendChild(menu_page__element);
+        } else document.querySelector('.b-load>div:nth-child('+index+') .menu_page__content').appendChild(menu_page__element);
     })
 
 

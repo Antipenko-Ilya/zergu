@@ -922,6 +922,9 @@ html {
 }
 
 @media (max-width: 800px) {
+    .book_wrapper {
+        display: none;
+    }
     .modal {
         transform: scale(0.7);
         
