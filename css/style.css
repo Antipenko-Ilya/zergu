@@ -4,7 +4,9 @@
 }
 html {
     overflow-x: hidden;
-    
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;   
 }
 
 .stop-scrolling {
@@ -474,6 +476,7 @@ html {
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 14px;
+    margin-left: 20px;
 }
 .menu_page__element__title_wrapper {
     display: flex;
@@ -767,6 +770,7 @@ html {
 
 .warning__content_text {
     font-size: 40px;
+    text-align: center;
     font-family: Abibas;
     margin-bottom: 80px;
 }

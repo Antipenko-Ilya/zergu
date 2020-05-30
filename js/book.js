@@ -559,10 +559,10 @@ function createMenu(index, menuData) {
                 menu_page__element__title_wrapper.appendChild(menu_page__element__text);
                 
         
-                const menu_page__element__gr= document.createElement('div');
+                const menu_page__element__gr= document.createElement('span');
                 menu_page__element__gr.className = 'menu_page__element__gr';
                 menu_page__element__gr.innerHTML=item.gr
-                menu_page__element__title_wrapper.appendChild(menu_page__element__gr);
+                menu_page__element__text.appendChild(menu_page__element__gr);
                 
             menu_page__element__title.appendChild(menu_page__element__title_wrapper);
         
