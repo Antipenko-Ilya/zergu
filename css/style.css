@@ -1104,6 +1104,14 @@ html {
     }
     
 }
+@media (max-width: 460px) {
+    .menu-mobail {
+        width: 90%;
+    }
+    .menu-mobail__content {
+        padding: 35px;
+    }
+}
 @media (max-width: 380px) {
     .warning__content_text {
         margin-bottom: 10px;
@@ -1122,6 +1130,7 @@ html {
     .book_wrapper {
         transform: scale(0.25);
     }
+    
     .modal{
         justify-content: flex-start;
         padding-top: 80px;
