@@ -495,15 +495,16 @@ html {
     
 }
 .menu-mobail {
+    display: none;
     width: 80%;
-    background: url(../image/menu/holst2.jpg);
+    background: url(../image/menu/holst3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     max-height: 100%;
     padding-top: 40px;
     overflow-y: scroll;
-    font-family: Abibas;
+    font-family:"Open sans";
 }
 .menu-mobail__content {
     font-weight: 900;
@@ -790,9 +791,6 @@ html {
     transform: scale(1.1);
 }
 
-.book_wrapper {
-    display: none;
-}
 
 @media (max-width: 2000px) {
     .book_wrapper{
@@ -950,6 +948,9 @@ html {
 @media (max-width: 800px) {
     .book_wrapper {
         display: none;
+    }
+    .menu-mobail {
+        display: block;
     }
     .modal {
         transform: scale(0.7);
