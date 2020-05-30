@@ -62,12 +62,12 @@
             <div  class="modal">
                 <div class="modal-content">
                     <h4 class="modal-title">Забронируйте прямо сейчас</h4>
-                    <form class="modal-form">
-                        <input class="modal-form_input" type="text" placeholder="Ваше имя">
-                        <input class="modal-form_input" type="text" placeholder="Ваша почта">
-                        <input class="modal-form_input" type="text" placeholder="Номер телефона">
+                    <form class="modal-form" action="sendMail.php">
+                        <input name="name" class="modal-form_input" type="text" placeholder="Ваше имя">
+                        <input name="email" class="modal-form_input" type="email" placeholder="Ваша почта">
+                        <input name="phone" class="modal-form_input" type="number" placeholder="Номер телефона">
                         <!-- <span>Количество гостей</span> -->
-                        <div onclick="showAfterSubmit()" class="modal-btn">ЗАБРОНИРОВАТЬ</div>
+                        <button type="submit" onclick="showAfterSubmit()" class="modal-btn">ЗАБРОНИРОВАТЬ</button>
                     </form>
                 </div>
             </div>

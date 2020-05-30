@@ -6,6 +6,11 @@ html {
     overflow-x: hidden;
     
 }
+
+.stop-scrolling {
+    height: 100vh;
+    overflow: hidden;
+  }
 ::-webkit-scrollbar {
     width: 15px;
     height: 15px;
