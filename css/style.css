@@ -491,6 +491,7 @@ html {
     background: url(../image/menu/holst2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     max-height: 100%;
     padding-top: 40px;
     overflow-y: scroll;
