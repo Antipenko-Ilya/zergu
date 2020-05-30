@@ -2,7 +2,6 @@
 const globalData = {
     menuData2: [
         {
-            isNew: true,
             text: 'Куриные острые крылья с соусом BBQ',
             gr: '250/50 гр',
             price: '390',

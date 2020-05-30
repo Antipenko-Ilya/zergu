@@ -130,6 +130,7 @@ setTimeout(()=>{
 }, 1500)
     
 function setAgeData(is18) {
+    $('body').removeClass('stop-scrolling')
     document.querySelector('.warning-wrapper').style.opacity='0';
     setTimeout(()=>{
         document.querySelector('.warning-wrapper').style.display = "none";
@@ -140,3 +141,7 @@ function setAgeData(is18) {
        })
     }
 }
+
+
+//block scrolling
+$('body').addClass('stop-scrolling')
