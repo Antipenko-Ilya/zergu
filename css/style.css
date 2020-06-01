@@ -1162,6 +1162,12 @@ html {
         padding: 35px;
     }
 }
+@media (max-width: 420px) {
+    .desk-content__elem {
+        width: 130px;
+        height: 130px;
+    }
+}
 @media (max-width: 380px) {
     .warning__content_text {
         margin-bottom: 10px;
@@ -1173,10 +1179,7 @@ html {
     .footer-contacts_item {
         margin-bottom: 20px;
     }
-    .desk-content__elem {
-        width: 150px;
-        height: 150px;
-    }
+   
     .book_wrapper {
         transform: scale(0.25);
     }
@@ -1187,6 +1190,15 @@ html {
     }
     .modal-title {
         font-size: 26px;
+    }
+    .about-content__elem-text {
+        font-size: 14px;
+    }
+    .contact-content__left-img {
+        display: none;
+    }
+    .contact-content__left-map {
+        width: auto;
     }
 }
 
