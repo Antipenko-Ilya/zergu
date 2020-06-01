@@ -191,3 +191,16 @@ function call() {
       });
 
   }
+
+
+//funcforbook
+  document.querySelector('.menu_first-page').addEventListener('click', (e)=>{
+    document.querySelector('#next_page_button').click();
+    if(+e.target.getAttribute('data-str') > 1){
+        let delay = 400;
+        for(let j=1; j <= +e.target.getAttribute('data-str')-1; j++){
+            setTimeout(()=>document.querySelector('#next_page_button').click(), delay);
+            delay = delay + 400;
+        }
+    }
+})
