@@ -30,6 +30,16 @@ html {
     font-family: "Pointedly";   
     src: url("../fonts/Pointedly.otf");
 }
+
+@font-face {
+    font-family: "Porkchop";   
+    src: url("../fonts/porkchop/porkchop.ttf");
+}
+
+@font-face {
+    font-family: "Abibas";   
+    src: url("../fonts/abibas/Abibas.otf");
+}
 .container {
     background: url(../image/container/container-bg.jpg);
 }
@@ -86,7 +96,7 @@ html {
     align-items: center;
     background: url(../image/header/navbar-bg.jpg);
     margin: 0 auto;
-    font-family: Abibas;
+    font-family: "Abibas";
     padding: 5px 20px;
 }
 .header-logo {
@@ -138,7 +148,7 @@ html {
 .hero-subtitle {
     font-size: 40px;
     color: #FFC011;
-    font-family: Abibas;
+    font-family: "Abibas";
     text-align: center;
 }
 .contact {
@@ -159,7 +169,7 @@ html {
 }
 .contact-subtitle {
     font-size: 40px;
-    font-family: Abibas;
+    font-family: "Abibas";
     text-align: center;
     color: #FFC011;
 }
@@ -193,7 +203,7 @@ html {
     cursor: pointer;
 }
 .contact-content__left-map_title {
-    font-family: Abibas;
+    font-family: "Abibas";
     color: #FFC011;
     font-size: 26px;
 }
@@ -236,13 +246,13 @@ html {
     color: #FF0000;
     -webkit-text-stroke: 0.3px #fff;
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     font-weight: 900;
     letter-spacing: 2px;
 }
 .contact-content__right-content_text {
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     color: #FFC011;
     font-size: 25px;
 }
@@ -256,7 +266,7 @@ html {
     color: #FF0000;
     -webkit-text-stroke: 0.1px #fff;
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     font-weight: 900;
     border-radius: 10px;
     min-height: 25px;
@@ -287,7 +297,7 @@ html {
 
 .contact-content__left-element {
     font-size: 25px;
-    font-family: Abibas;
+    font-family: "Abibas";
     text-align: center;
 }
 
@@ -353,7 +363,7 @@ html {
     align-items: center;
 }
 .about-content__elem-text {
-    font-family: Abibas;
+    font-family: "Abibas";
     font-size: 16.5px;
     margin-bottom: 4px;
 }
@@ -402,14 +412,14 @@ html {
 .beer-elem__title {
     font-size: 70px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Porkchop";
     font-weight: normal;
     text-align: center;
 }
 .beer-elem__description {
     width: 70%;
     color: #fff;
-    font-family: Abibas;
+    font-family: "Abibas";
     text-align: center;
     font-size: 18px;
 }
@@ -609,7 +619,7 @@ html {
 }
 .footer-contacts_item {
     font-size: 24px;
-    font-family: Abibas;
+    font-family: "Abibas";
     color: #FFC011;
     margin-bottom: 30px;
     text-align: center;
@@ -617,7 +627,7 @@ html {
 .footer-contact__left-title {
     font-size: 30px;
     color: #FFC011;
-    font-family: Porkchop;
+    font-family: "Porkchop";
     font-weight: normal;
     text-align: center;
 }
@@ -626,7 +636,7 @@ html {
     color: #FF0000;
     -webkit-text-stroke: 0.1px #fff;
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     font-weight: 900;
 }
 .footer-contacts_links-wrapper {
@@ -685,7 +695,7 @@ html {
     margin: 0 auto;
 }
 .modal-title {
-    font-family: Abibas;
+    font-family: "Abibas";
     color: #000;
     font-size: 38px;
     margin-bottom: 50px;
@@ -699,7 +709,7 @@ html {
     justify-content: space-around;
 }
 .modal-form_input {
-    font-family: Abibas;
+    font-family: "Abibas";
     color: #000;
     font-size: 26px;
     margin-bottom: 15px;
@@ -719,7 +729,7 @@ html {
     color: #FF0000;
     -webkit-text-stroke: 0.1px #fff;
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     font-weight: 900;
     border-radius: 10px;
     min-height: 25px;
@@ -756,7 +766,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: Abibas;
+    font-family: "Abibas";
     color:#FFC011;
 }
 .btn_up{
@@ -810,7 +820,7 @@ html {
 .warning__content_text {
     font-size: 40px;
     text-align: center;
-    font-family: Abibas;
+    font-family: "Abibas";
     margin-bottom: 80px;
 }
 
@@ -819,7 +829,7 @@ html {
     display: flex;
     justify-content: space-between;
     font-size: 50px;
-    font-family: Abibas;
+    font-family: "Abibas";
     width: 70%;
 }
 .warning__content_btn {
@@ -1223,7 +1233,7 @@ html {
 	border-radius:10px;
 }
 .booklet .b-wrap {
-    font-family: Abibas;
+    font-family: "Abibas";
     background-image: url('../image/menu/holst.jpg')
     !important;
     background-size: cover;
