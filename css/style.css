@@ -28,18 +28,24 @@ html {
 }
 @font-face {
     font-family: "Pointedly";   
-    src: url("../fonts/Pointedly.otf");
+    src: url("../fonts/Pointedly.otf") format("truetype");
 }
 
 @font-face {
     font-family: "Porkchop";   
-    src: url("../fonts/porkchop/porkchop.ttf");
+    src: url("../fonts/porkchop/porkchop.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Abibas";   
-    src: url("../fonts/abibas/Abibas.otf");
+    src: url("../fonts/abibas/Abibas.otf") format("truetype");
 }
+
+@font-face {
+    font-family: "Montresor";   
+    src: url("../fonts/Montresor.ttf") format("truetype");
+}
+
 .container {
     background: url(../image/container/container-bg.jpg);
 }
@@ -148,7 +154,7 @@ html {
 .hero-subtitle {
     font-size: 40px;
     color: #FFC011;
-    font-family: "Abibas";
+    font-family: "Montresor";
     text-align: center;
 }
 .contact {
@@ -169,7 +175,7 @@ html {
 }
 .contact-subtitle {
     font-size: 40px;
-    font-family: "Abibas";
+    font-family: "Montresor";
     text-align: center;
     color: #FFC011;
 }
@@ -195,7 +201,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     padding: 20px;
     min-height: 40px;
     border-radius: 10px;
@@ -815,6 +821,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;    
 }
 
 .warning__content_text {
@@ -825,14 +835,20 @@ html {
 }
 
 .warning__content_btns {
-    cursor: pointer;
+ 
     display: flex;
     justify-content: space-between;
     font-size: 50px;
     font-family: "Abibas";
     width: 70%;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+
 }
 .warning__content_btn {
+    cursor: pointer;
     transition: .4s;
 }
 .warning__content_btn:hover {
@@ -852,9 +868,7 @@ html {
     .contact-subtitle {
         font-size: 33px;
     }
-    .contact-content__left-map {
-        width: 35%;
-    }
+    
     .about-title {
         font-size: 65px;
     }
@@ -994,6 +1008,10 @@ html {
 }
 
 @media (max-width: 800px) {
+    .menu_page__element__text {
+        letter-spacing: 1.2px;
+        font-family: "Montresor";
+    }
     .book_wrapper {
         display: none;
     }

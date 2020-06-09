@@ -540,10 +540,10 @@ function createMenu(index, menuData) {
         const menu_page__element = document.createElement('div');
         menu_page__element.className = 'menu_page__element';
 
-        const menu_page__element__is_new = document.createElement('div');
-        menu_page__element__is_new.className = 'menu_page__element__is_new'
-        menu_page__element__is_new.innerHTML = item.isNew ? 'NEW' : '';
-        menu_page__element.appendChild(menu_page__element__is_new);
+        //const menu_page__element__is_new = document.createElement('div');
+        //menu_page__element__is_new.className = 'menu_page__element__is_new'
+        //menu_page__element__is_new.innerHTML = item.isNew ? 'NEW' : '';
+        //menu_page__element.appendChild(menu_page__element__is_new);
 
         
         const menu_page__element__title = document.createElement('div');
@@ -555,7 +555,7 @@ function createMenu(index, menuData) {
         
                 const menu_page__element__text  = document.createElement('div');
                 menu_page__element__text.className = 'menu_page__element__text';
-                menu_page__element__text.innerHTML=item.text
+                menu_page__element__text.innerHTML= item.isNew ? '<span style="font-weight: bold; color: #6b0101;">NEW </span>'+ item.text : item.text;
                 menu_page__element__title_wrapper.appendChild(menu_page__element__text);
                 
         
@@ -593,16 +593,5 @@ for (let i=0; i<pages;i++) {
 function activateLeftPage() {
     document.querySelector('.b-overlay-prev').style.visibility = 'visible';
 }
-// перелистование меню
-// document.querySelector('.menu_first-page').onclick = function(e){
-//     console.log(123123)
-//     document.querySelector('#next_page_button').click();
-//     if(+e.target.getAttribute('data-str') > 1){
-//         let delay = 400;
-//         for(let j=1; j <= +e.target.getAttribute('data-str')-1; j++){
-//             setTimeout(()=>document.querySelector('#next_page_button').click(), delay);
-//             delay = delay + 400;
-//         }
-//     }
-// }
+
 
