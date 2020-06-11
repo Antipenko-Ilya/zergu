@@ -1,11 +1,51 @@
 
 //slider
 let slideIndex = 0;
+let currentTranslateMinGallery = 0;
+document.querySelector('.slides').style.display= 'block';
+let slides = Array.from(document.querySelectorAll('.slides'));
 
-let slides = document.querySelector('.slides').style.display= 'block';
 
-function showSlides(n){
-    let slides = Array.from(document.querySelectorAll('.slides'));
+function showSlides(n, isFromMin){
+    
+
+    
+
+    ///
+    if (!isFromMin) {
+        let prevMinSlide = document.querySelector('.gallery_min-slides>div:nth-child('+(slideIndex+1)+') img');
+        prevMinSlide.style.border = '3px solid transparent';
+
+
+        slides[slideIndex].style.opacity = '0';
+        let tempIndex = slideIndex;
+        setTimeout(()=>{
+                slides[tempIndex].style.display = 'none';
+                
+        }, 300)
+    }
+
+    slideIndex+=n;
+
+    if(slideIndex >= slides.length){
+        slideIndex = 0;
+    }
+    else if(slideIndex < 0) {
+        slideIndex = slides.length-1;
+    }
+
+    document.querySelector('.gallery_min-slides>div:nth-child('+(slideIndex+1)+') img')
+        .style.border = '3px solid white';
+    
+
+
+    setTimeout(()=>{
+        slides[slideIndex].style.display ='block';
+        setTimeout(()=>slides[slideIndex].style.opacity ='1');
+    }, 300);
+}
+
+function slideTo(index) {
 
     slides[slideIndex].style.opacity = '0';
     let tempIndex = slideIndex;
@@ -14,20 +54,13 @@ function showSlides(n){
             
     }, 300)
 
-    slideIndex+=n;
+    let prevMinSlide = document.querySelector('.gallery_min-slides>div:nth-child('+(slideIndex+1)+') img');
+    prevMinSlide.style.border = '3px solid transparent';
 
-    if(slideIndex >= slides.length){
-        slideIndex = 1;
-    }
-    else if(slideIndex < 1) {
-        slideIndex = slides.length-1;
-    }
-    
-    setTimeout(()=>{
-        slides[slideIndex].style.display ='block';
-        setTimeout(()=>slides[slideIndex].style.opacity ='1');
-    }, 300);
+    slideIndex=index-1;
+    showSlides(1, true)
 }
+
 
 //animation
 
@@ -151,6 +184,7 @@ $('body').addClass('stop-scrolling')
 //sendMail
 function call() {
     var msg   = $('#forms').serialize();
+    console.log(msg)
       $.ajax({
         type: 'POST',
         url: '../mail.php', // Если обработчик лежит не рядом с формой, то здесь следует указать полный путь до него. Например http://example.com/mail.php
@@ -177,3 +211,5 @@ function call() {
         }
     }
 })
+
+

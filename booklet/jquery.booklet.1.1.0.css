@@ -42,14 +42,15 @@
 	.booklet .b-p3 {background-image:url("images/shadow.png"); background-repeat:repeat-y; background-position:0 10px;}
 	
    	/* Overlay Controls */
-	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:50%;}
+	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:50%; display: none !important;}
 	.booklet .b-overlay-prev {left:0;visibility: hidden;}
 	.booklet .b-overlay-next {right:0;}
 	
    	/* Tab Controls */
 	.booklet .b-tab        {background:#000; height:40px; width:100%; padding:10px 0 0; text-align:center; color:#ccc; position:absolute; font-size:11px;}
 	.booklet .b-tab-prev   {left:0;}
-	.booklet .b-tab-next   {right:0;}
+	.booklet .b-tab-next   {right:0; }
+	.b-overlay .b-overlay-next .b-next {display: none;}
 	.booklet .b-tab:hover  {background:#aaa; color:#000;}	
 	
    	/* Arrow Controls */

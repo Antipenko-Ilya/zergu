@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js" defer></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Traktir-Zergut</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img class="header-logo" src="../image/header/logo-zergut.png" alt="logo">
+            <div class="navbar_wrapper">
+               
+                <a href="../index.html" class="header_back-btn">
+                    Вернуться на главную страницу
+                </a>
+            </div>
+            <div onclick="showMenu()" id="burger"></div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="order__wrapper">
+            <div class="order__inner_wrapper">
+                <div class="order__list_wrapper">
+                    <div class="order__list_heading">Ваш заказ</div>
+                    <div class="order__list_inner_wrapper">
+
+                    </div>
+                    <div class="order__total_price">
+
+                    </div>
+                </div>
+                <form class="order__input_wrapper"  id="forms" action="javascript:void(null);" onsubmit="call()" method="POST">
+                    <input class="order__input" placeholder="Имя" name="name">
+                    <input class="order__input" placeholder="Почта(опционально)" name="email">
+                    <input class="order__input" placeholder="Телефон" name="phone">
+                    <input class="order__input" placeholder="Адрес" name="adress">
+                    <input type='submit' class="order__submit_btn">Отправить заказ</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
