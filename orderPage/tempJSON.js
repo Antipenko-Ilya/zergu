@@ -1,5 +1,4 @@
-const globalData = {
-    menuData2: [
+[
         {
             id: 0,
             text: 'Куриные острые крылья с соусом BBQ',
@@ -55,9 +54,7 @@ const globalData = {
             gr: '100/30 гр',
             price: '250',
             descr: ''
-        }
-    ],
-    menuData3: [
+        },
         {
             id: 8,
             text: 'Луковые кольца с соусом тар-тар',
@@ -99,9 +96,7 @@ const globalData = {
             gr: '1000 гр',
             price: '2700',
             descr: ''
-        }
-    ],
-    menuData4: [
+        },
         {
             id: 14,
             text: 'Большой пивной сет на компанию',
@@ -116,9 +111,7 @@ const globalData = {
             gr: '',
             price: '990',
             descr: 'Классические и острые сырно-куриные шарики, твисти из слоеного теста с сыром и беконом, сыр чесил, соуса'
-        }
-    ],
-    menuData5: [
+        },
         {
             id: 16,
             text: 'Тар-тар из говяжьей вырезки',
@@ -146,9 +139,7 @@ const globalData = {
             gr: '150/60 гр',
             price: '270',
             descr: 'Топленое сало со шкварками и черными гренками'
-        }
-    ],
-    menuData6: [
+        },
         {
             id: 20,
             text: 'Тарелочка солений',
@@ -169,9 +160,7 @@ const globalData = {
             gr: '120/45/50 гр',
             price: '650',
             descr: 'Сыр Бри, сыр моцарелла мини, сыр с плесенью, сыр Пармезан, виноград, грецкие орехи, джем'
-        }
-    ],
-    menuData7: [
+        },
         {
             id: 23,
             isNew: true,
@@ -201,8 +190,6 @@ const globalData = {
             price: '640',
             descr: 'Листья салата, креветки тигровые, мидии, коктейль морской, сливки'
         },
-    ],
-    menuData8: [
         {
             id: 27,
             text: 'Салат Шопский',
@@ -231,8 +218,6 @@ const globalData = {
             price: '630',
             descr: 'свежие помидоры, огурцы, болгарский перец, красный лук, стебель сельдерея, обжаренная говяжья вырезка, зелень, заправлены тайским соусом'
         },
-    ],
-    menuData9: [
         {
             id: 31,
             text: 'Салат «Мясной»',
@@ -246,9 +231,7 @@ const globalData = {
             gr: '200 гр',
             price: '320',
             descr: 'и ароматным маслом'
-        }
-    ],
-    menuData10: [
+        },
         {
             id: 33,
             text: 'Борщ',
@@ -291,8 +274,6 @@ const globalData = {
             price: '275',
             descr: ''
         },
-    ],
-    menuData11:[
         {
             id: 39,
             text: 'Большой колбасный сет',
@@ -306,9 +287,7 @@ const globalData = {
             gr: '300/60 гр',
             price: '690',
             descr: ''
-        }
-    ],
-    menuData12:[
+        },
         {
             id: 41,
             text: 'Стейк от Фельдкурата ',
@@ -343,9 +322,7 @@ const globalData = {
             gr: '240 гр',
             price: '490',
             descr: 'Обжаренное куриное филе с сыром, беконом, вялеными помидорами и соусом Песто'
-        }
-    ],
-    menuData13:[
+        },
         {
             id: 46,
             text: 'Филе трески со шпинатом ',
@@ -374,8 +351,6 @@ const globalData = {
             price: '490',
             descr: 'Подаются со сливочно-грибным соусом'
         },
-    ],
-    menuData14: [
         {
             id: 50,
             text: 'Шашлык свиной',
@@ -418,9 +393,7 @@ const globalData = {
             gr: '1 шт.',
             price: '450',
             descr: ''
-        }
-    ],
-    menuData15: [
+        },
         {
             id: 56,
             text: 'Картофель жареный с грибами и зеленью ',
@@ -470,8 +443,6 @@ const globalData = {
             price: '220',
             descr: ''
         },
-    ],
-    menuData16: [
         {
             id: 63,
             text: 'Соус Барбекю ',
@@ -521,8 +492,6 @@ const globalData = {
             price: '170',
             descr: ''
         },
-    ],
-    menuData17: [
         {
             id: 70,
             text: 'Шварцвальд',
@@ -551,8 +520,6 @@ const globalData = {
             price: '200',
             descr: ''
         },
-    ],
-    menuData18: [
         {
             id: 74,
             text: 'Пилснер Светлое',
@@ -567,8 +534,6 @@ const globalData = {
             price: '190/260',
             descr: ''
         },
-    ],
-    menuData19: [
         {
             id: 76,
             text: 'Светлое',
@@ -590,9 +555,6 @@ const globalData = {
             price: '300',
             descr: ''
         },
-        
-    ],
-    menuData20: [
         {
             id: 79,
             text: 'Светлое  ',
@@ -606,9 +568,7 @@ const globalData = {
             gr: '2,0',
             price: '750',
             descr: ''
-        }
-    ],
-    menuData21: [
+        },
         {
             id: 81,
             text: 'Чесночные гренки с соусом Дор Блю  ',
@@ -616,5 +576,4 @@ const globalData = {
             price: '180',
             descr: ''
         }
-    ]
-}
+]

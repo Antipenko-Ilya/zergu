@@ -10,12 +10,28 @@ $email = $_POST['email'];
 $adress = $_POST['adress'];
 $data = json_decode($_POST['data']);
 
+$string23 = file_get_contents("data.txt", true);
+$string23 = json_decode($string23);
+
+
+
 $array = [];
 foreach ($data as &$value) {
+
+
+    foreach ($string23 as &$item) {
+        if($item->id == $value->dish->id) {
+            $value->dish->price = $item->price;
+        }
+    }
+
     $newArr = [
         "Блюдо: ",
         $value->dish->text,
-        " ",
+        "—",
+        "Цена: ",
+        $value->dish->price,
+        "  ",
         "Количество: ",
         $value->count,
         "<br/>"

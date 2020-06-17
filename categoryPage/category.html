@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="category.css">
+    <script src="tempJSON.js"></script>
+    <script src="menuData.js"></script>
+    <script src="category.js" defer></script>
+</head>
+
+<body>
+    <div class="warning-after-order">
+        <div class="warning-after-order_text">
+            <div class="warning-after-order_text">Чтобы изменить или оформить заказ нажмите на значок корзины в правом
+                верхнем углу</div>
+            <div class="warning-after-order_btn"
+                onclick="document.querySelector('.warning-after-order').style.display='none'">OK</div>
+        </div>
+
+    </div>
+
+    <div class="order__wrapper">
+        <div class="order__item-info_wrapper">
+            <div class="menu_page__element__title">
+                <div class="menu_page__element__title_wrapper">
+                    <div id="order__element_text" class="menu_page__element__text">
+                        <span id="order__element_gr" class="menu_page__element__gr"></span>
+                    </div>
+                </div>
+                <div id="order__element_price" class="menu_page__element__price">
+
+                </div>
+            </div>
+
+            <div class="order__dish_count">
+                Выберите количество:
+                <div class="order__dish_input">
+                    <span onclick="orderDishCounter(-1)">-</span>
+                    <div class="order__dish_counter">1</div>
+                    <span onclick="orderDishCounter(1)">+</span>
+                </div>
+            </div>
+
+            <div onclick="addToCart()" class="order__dish-add">
+                Добавить в корзину
+            </div>
+        </div>
+    </div>
+    <div class="category_header">
+        <a class="category_menu_item" href="../index.html">Вернуться на главную страницу</a>
+        <div class="cart">
+            <a href="../orderPage/order.html"><img class="cart_img" src="/image/cart/shopping-cart-349544_640.png"
+                    alt=""></a>
+            <div class="cart_counter">0</div>
+        </div>
+    </div>
+    <div class="category_section">
+
+    </div>
+
+</body>
+
+</html>
