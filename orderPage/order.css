@@ -6,22 +6,22 @@
 }
 
 @font-face {
-    font-family: "Pointedly";   
+    font-family: "Pointedly";
     src: url("../fonts/Pointedly.otf") format("truetype");
 }
 
 @font-face {
-    font-family: "Porkchop";   
+    font-family: "Porkchop";
     src: url("../fonts/porkchop/porkchop.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Abibas";   
+    font-family: "Abibas";
     src: url("../fonts/abibas/Abibas.otf") format("truetype");
 }
 
 @font-face {
-    font-family: "Montresor";   
+    font-family: "Montresor";
     src: url("../fonts/Montresor.ttf") format("truetype");
 }
 
@@ -36,11 +36,12 @@ input:focus {
 .container {
     background: url(../image/container/container-bg.jpg);
 }
+
 .wrap {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    
+
     height: 800px;
     background: url(../image/menu/bg.jpg);
 }
@@ -58,16 +59,19 @@ input:focus {
     font-family: "Abibas";
     padding: 5px 20px;
 }
+
 .header-logo {
     min-width: 200px;
     max-width: 200px;
     width: 20%;
     height: auto;
 }
+
 .navbar {
     display: flex;
     padding-right: 120px;
 }
+
 .navbar-link {
     margin-left: 25px;
     text-decoration: none;
@@ -75,13 +79,16 @@ input:focus {
     font-size: 36px;
     transition: .3s;
 }
+
 .navbar-link:hover {
     transform: scale(1.1)
 }
+
 .header-contact {
     font-size: 20px;
     color: #fff;
 }
+
 #burger {
     display: none;
 }
@@ -109,7 +116,7 @@ input:focus {
 }
 
 .cart_img {
-    
+
     margin-left: 20px;
     max-width: 80px;
     filter: invert(83%) sepia(39%) saturate(2671%) hue-rotate(345deg) brightness(102%) contrast(104%);
@@ -209,6 +216,7 @@ input:focus {
     align-items: flex-end;
     width: 100%;
 }
+
 .menu_page__element__title {
     font-size: 23px;
     display: flex;
@@ -216,21 +224,25 @@ input:focus {
     justify-content: space-between;
     margin-bottom: 5px;
 }
+
 .menu_page__element__price {
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 16px;
     margin-left: 20px;
 }
+
 .menu_page__element__title_wrapper {
     display: flex;
 }
+
 .menu_page__element__gr {
     font-size: 12px;
     margin-left: 5px;
     font-family: 'Open Sans';
     font-weight: bold;
 }
+
 .menu_page__element_description {
     font-size: 18px;
     align-self: flex-start;
@@ -245,10 +257,13 @@ input:focus {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .order_change_count_text {
     margin: 0px 6px;
 }
-.order_change_count_plus, .order_change_count_minus {
+
+.order_change_count_plus,
+.order_change_count_minus {
     cursor: pointer;
     padding: 5px;
     font-size: 20px;
@@ -268,14 +283,25 @@ input:focus {
         flex-direction: column;
         align-items: center;
     }
+
     .order__list_wrapper {
         width: 90%;
         margin-bottom: 30px;
     }
+
     .menu_page__element_delete {
         margin-top: 10px;
     }
+
     .order__input_wrapper {
         width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .header_back-btn {
+        font-size: 23px;
     }
 }
