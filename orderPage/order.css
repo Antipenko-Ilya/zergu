@@ -46,6 +46,45 @@ input:focus {
     background: url(../image/menu/bg.jpg);
 }
 
+.feedback_wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.feedback_inner {
+    margin-right: 20px;
+    width: 400px;
+    height: 200px;
+    background-image:url(../image/contact/2.png);
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.feedback_btn {
+    cursor: pointer;
+    margin-top: 30px;
+    background-image: url(../image/container/container-bg.jpg);
+    color: #FFC011;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 3px solid grey;
+}
 
 .header {
     box-sizing: border-box;
@@ -199,6 +238,7 @@ input:focus {
     cursor: pointer;
     color: var(--data-color);
     background: url(../image/container/container-bg.jpg);
+    background-size: cover;
     border-radius: 15px;
     padding: 10px 20px;
     font-size: 30px;
@@ -252,6 +292,7 @@ input:focus {
 
 .menu_page__element_delete {
     background: url(../image/container/container-bg.jpg);
+    background-size: cover;
     color: var(--data-color);
     padding: 5px 10px;
     border-radius: 10px;

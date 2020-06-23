@@ -85,14 +85,12 @@ function openOrderWrapper(target) {
 }
 
 function findById(id) {
-    for (let key in globalData) {
-        globalData[key].forEach(item => {
-            if (item.id == id) {
-                console.log(item)
-                tempDish = item;
-            }
-        });
-    }
+    menuData.forEach(item => {
+        if (item.id == id) {
+            console.log(item)
+            tempDish = item;
+        }
+    });
 }
 
 const grElement = document.querySelector('#order__element_text').innerHTML;

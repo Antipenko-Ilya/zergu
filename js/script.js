@@ -156,12 +156,18 @@ function showAfterSubmit() {
 }
 
 //warning
-setTimeout(() => {
-    document.querySelector('.warning-wrapper').style.display = "flex";
+const userDataAge = JSON.parse(localStorage.getItem('userDataAge'));
+
+if (!userDataAge) {
     setTimeout(() => {
-        document.querySelector('.warning-wrapper').style.opacity = '1';
-    })
-}, 1500)
+        document.querySelector('.warning-wrapper').style.display = "flex";
+        setTimeout(() => {
+            document.querySelector('.warning-wrapper').style.opacity = '1';
+        })
+    }, 1500)
+} else {
+    setTimeout(() => setAgeData(userDataAge.is18))
+}
 
 function setAgeData(is18) {
     $('body').removeClass('stop-scrolling')
@@ -174,6 +180,7 @@ function setAgeData(is18) {
             item.style.display = "none";
         })
     }
+    localStorage.setItem('userDataAge', JSON.stringify({ is18 }))
 }
 
 

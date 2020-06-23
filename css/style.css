@@ -3,12 +3,14 @@
     padding: 0;
 }
 
-html {
+html{
     overflow-x: hidden;
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
 }
+
+
 
 .stop-scrolling {
     height: 100vh;
@@ -150,7 +152,7 @@ html {
 
 .hero {
     min-height: 100%;
-    background: url('../image/hero/kran.jpg');
+    background: url('../image/hero/kran.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -182,7 +184,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: url('../image/contact/bg.jpg');
+    background: url('../image/contact/bg.png');
     height: 100%;
 }
 
@@ -628,7 +630,8 @@ html {
     color: #FFC011;
     border-radius: 10px;
     background: url(../image/container/container-bg.jpg);
-    padding: 5px 10px;
+    background-size: cover;
+    padding: 2px 10px;
 }
 
 .menu_first-page {
@@ -1446,7 +1449,7 @@ div.gallery-content {
     }
 
     .hero-title {
-        font-size: 60px;
+        font-size: 58px;
     }
 
     .navbar-link {
@@ -1597,8 +1600,8 @@ div.gallery-content {
         font-size: 40px;
     }
 
-    #gallery .wrap {
-        height: 500px;
+    .gallery_min-slides img {
+        width: 100px;
     }
 
     #desk .wrap {
@@ -1659,6 +1662,12 @@ div.gallery-content {
         width: 130px;
         height: 130px;
     }
+    
+    .menu_category {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1673,6 +1682,7 @@ div.gallery-content {
 
     .footer-contacts_item {
         margin-bottom: 20px;
+        font-size: 20px;
     }
 
     .book_wrapper {
@@ -1754,6 +1764,7 @@ div.gallery-content {
 }
 
 .booklet .b-counter {
+    display: none;
     bottom: 10px;
     position: absolute;
     display: block;
@@ -1772,6 +1783,7 @@ div.gallery-content {
 }
 
 .booklet div.b-counter {
+    display: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;

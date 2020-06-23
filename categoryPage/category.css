@@ -99,6 +99,7 @@ a {
     color: #FFC011;
     border-radius: 10px;
     background: url(../image/container/container-bg.jpg);
+    background-size: cover;
     padding: 5px 10px;
 }
 
@@ -118,9 +119,10 @@ a {
 }
 
 .order__item-info_wrapper {
+    max-width: 90%;
     padding: 30px;
     width: 600px;
-    height: 400px;
+    min-height: 300px;
     background: url(../image/cart/bg.png);
     border-radius: 15px;
     color: white;
@@ -135,27 +137,27 @@ a {
 
 
 #order__element_text {
-    font-size: 30px;
+    font-size: 20px;
 
     font-family: Montresor;
     letter-spacing: 2px;
 }
 
 #order__element_gr {
-    font-size: 20px;
+    font-size: 15px;
     font-family: Montresor;
     letter-spacing: 2px;
 }
 
 #order__element_price {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Montresor;
     letter-spacing: 2px;
 }
 
 
 .order__dish_count {
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +189,7 @@ a {
 
 .order__dish-add {
     transition: .4s;
-    font-size: 32px;
+    font-size: 20px;
     border-radius: 10px;
     padding: 5px 10px;
     background-image: url(../image/container/container-bg.jpg);

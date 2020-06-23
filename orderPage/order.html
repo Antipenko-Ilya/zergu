@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,21 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>Traktir-Zergut</title>
 </head>
+
 <body>
+    <div class="feedback_wrapper">
+        <div class="feedback_inner">
+            <div class="feedback_heading">
+                Заказ принят!<br /> Скоро с вами свяжется наш менеджер.
+            </div>
+            <div onclick="closeFeedback()" class="feedback_btn">OK</div>
+        </div>
+    </div>
     <div class="container">
         <header class="header">
             <img class="header-logo" src="../image/header/logo-zergut.png" alt="logo">
             <div class="navbar_wrapper">
-               
+
                 <a href="../index.html" class="header_back-btn">
                     Вернуться на главную страницу
                 </a>
@@ -37,16 +47,19 @@
 
                     </div>
                 </div>
-                <form class="order__input_wrapper"  id="forms" action="javascript:void(null);" onsubmit="call()" method="POST">
+                <form class="order__input_wrapper" id="forms" action="javascript:void(null);" onsubmit="call()"
+                    method="POST">
                     <input class="order__input" placeholder="Имя" name="name">
                     <input class="order__input" placeholder="Почта(опционально)" name="email">
                     <input class="order__input" placeholder="Телефон" name="phone">
                     <input class="order__input" placeholder="Адрес" name="adress">
-                    <input type='submit' class="order__submit_btn">Отправить заказ</div>
-                </form>
+                    <input type='submit' class="order__submit_btn">
             </div>
+            </form>
         </div>
     </div>
-    
+    </div>
+
 </body>
+
 </html>
