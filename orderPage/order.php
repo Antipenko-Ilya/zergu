@@ -47,13 +47,13 @@ $array = implode("", $array);
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'ladasfeed@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Ladosvent256Ladosvent256'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'zergut-2016@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'dance400400'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('ladasfeed@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('SdaniilS00@mail.ru');     // Кому будет уходить письмо 
+$mail->setFrom('zergut-2016@mail.ru'); // от кого будет уходить письмо?
+$mail->addAddress('traktir.zergut.the.best@gmail.com');      // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
