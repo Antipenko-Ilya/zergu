@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="order.css">
     <script src="order.js" defer></script>
-
+    <script src="tempJSON.js"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
@@ -43,8 +43,11 @@
                     <div class="order__list_inner_wrapper">
 
                     </div>
-                    <div class="order__total_price">
-
+                    <div style="display: flex;">
+                        Итоговая цена: 
+                        <div class="order__total_price">
+                            
+                        </div>
                     </div>
                 </div>
                 <form class="order__input_wrapper" id="forms" action="javascript:void(null);" onsubmit="call()"
@@ -53,9 +56,21 @@
                     <input class="order__input" placeholder="Почта(опционально)" name="email">
                     <input class="order__input" placeholder="Телефон" name="phone">
                     <input class="order__input" placeholder="Адрес" name="adress">
+
+                    <div class="methods_wrapper">
+                        <div class="method_wrapper">
+                            <input type="radio" name="method" value="delivery" id="method_1">
+                            <label for="method_1">Доставка</label>
+                        </div>
+
+                        <div class="method_wrapper">
+                            <input type="radio" name="method" value="pickup" id="method_2">
+                            <label for="method_2">Самовывоз</label>
+                        </div>
+                    </div>
+
                     <input type='submit' class="order__submit_btn">
-            </div>
-            </form>
+                </form>
         </div>
     </div>
     </div>

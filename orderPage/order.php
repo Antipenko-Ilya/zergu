@@ -8,16 +8,20 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $adress = $_POST['adress'];
-$data = json_decode($_POST['data']);
+$method = $_POST['method'];
 
+if ($method == 'delivery') {
+    $method = 'Доставка'
+} else {
+    $method = 'Самовывоз'
+}
+
+$data = json_decode($_POST['data']);
 $string23 = file_get_contents("data.txt", true);
 $string23 = json_decode($string23);
 
-
-
 $array = [];
 foreach ($data as &$value) {
-
 
     foreach ($string23 as &$item) {
         if($item->id == $value->dish->id) {
@@ -63,7 +67,7 @@ $mail->addAddress('traktir.zergut.the.best@gmail.com');      // Кому буд�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ с сайта';
-$mail->Body    = '' .$name . ' сделал заказ. Его заказ:<br> ' .$array. '<br>Почта этого пользователя: ' .$email .'<br>Его телефон: ' .$phone .'<br>Его адрес: ' .$adress;
+$mail->Body    = '' .$name . ' сделал заказ. Его заказ:<br> ' .$array. '<br>Почта этого пользователя: ' .$email .'<br>Его телефон: ' .$phone .'<br>Его адрес: ' .$adress. '<br>Способ доставки: ' .$method;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

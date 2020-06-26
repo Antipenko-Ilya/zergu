@@ -4,7 +4,7 @@ let tempDish;
 let tempCountOfDifDishes = localStorage.getItem('cartCounter');
 let isModalAfterOrderPressed = false;
 
-document.querySelector('.cart_counter').innerHTML = tempCountOfDifDishes;
+document.querySelector('.cart_counter').innerHTML = tempCountOfDifDishes ? tempCountOfDifDishes : 0;
 
 
 document.querySelector('.book_wrapper').addEventListener('click', async (event)=>{

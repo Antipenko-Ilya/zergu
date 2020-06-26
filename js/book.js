@@ -56,7 +56,7 @@ function createMenu(index, menuData) {
 
 
 }
-const pages = 25;
+const pages = 23;
 for (let i = 0; i < pages; i++) {
     createMenu(i + 2, globalData['menuData' + (i + 2)]);
 }

@@ -594,7 +594,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_toch',
+        category: 'beer',
         id: 74,
         text: 'Пилснер Светлое',
         gr: '0,33/0,5',
@@ -602,7 +602,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_toch',
+        category: 'beer',
         id: 75,
         text: 'Зер Гут Темное ',
         gr: '0,33/0,5',
@@ -610,7 +610,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_botled',
+        category: 'beer',
         id: 76,
         text: 'Светлое',
         gr: '0,5',
@@ -618,7 +618,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_botled',
+        category: 'beer',
         id: 77,
         text: 'Темное ',
         gr: '0,5',
@@ -626,7 +626,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_botled',
+        category: 'beer',
         id: 78,
         text: 'Безалкогольное ',
         gr: '0,5',
@@ -634,7 +634,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_out',
+        category: 'beer',
         id: 79,
         text: 'Светлое  ',
         gr: '2,0',
@@ -642,7 +642,7 @@ const menuData = [{
         descr: ''
     },
     {
-        category: 'beer_out',
+        category: 'beer',
         id: 80,
         text: 'Темное  ',
         gr: '2,0',
@@ -655,6 +655,47 @@ const menuData = [{
         text: 'Чесночные гренки с соусом Дор Блю  ',
         gr: '150/30 гр',
         price: '180',
+        descr: ''
+    },
+    {
+        category: 'main_go',
+        id: 82,
+        isNew: true,
+        text: 'Вепрь на гриле',
+        gr: '200/50 гр',
+        price: '510',
+        descr: 'Нежная свиная шея,обжаренная на гриле подается с соленьями и соусом барбекю'
+    },
+    {
+        category: 'dacha',
+        id: 83,
+        text: 'Шашлык свиной',
+        gr: '1 кг',
+        price: '620',
+        descr: ''
+    },
+    {
+        category: 'dacha',
+        id: 84,
+        text: 'Шашлык из курицы',
+        gr: '1 кг',
+        price: '350',
+        descr: ''
+    },
+    {
+        category: 'dacha',
+        id: 85,
+        text: 'Каре баранины на кости',
+        gr: '1 кг',
+        price: '850',
+        descr: ''
+    },
+    {
+        category: 'dacha',
+        id: 86,
+        text: 'Ассорти баварских колбасок',
+        gr: '1 кг',
+        price: '770',
         descr: ''
     }
 ]

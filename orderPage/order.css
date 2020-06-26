@@ -319,6 +319,31 @@ input:focus {
     align-items: center;
 }
 
+.methods_wrapper {
+    width: 84%;
+}
+
+.method_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.method_wrapper input {
+    margin-right: 20px;
+    
+}
+
+.method_wrapper label {
+    color: white;
+    font-size: 20px;
+}
+
+.order__total_price {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
     .order__inner_wrapper {
         flex-direction: column;

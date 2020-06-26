@@ -156,4 +156,7 @@ function call() {
 
 function closeFeedback() {
     document.querySelector('.feedback_wrapper').style.display = 'none';
+    window.location = '/';
+    localStorage.removeItem('dishes');
+    localStorage.removeItem('cartCounter');
 }
