@@ -1201,6 +1201,69 @@ div.gallery-content {
 }
 
 
+/* BAR CARD SLIDER */
+.bar_card__slider__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bar_card_slide_contorl {
+    cursor: pointer;
+    font-size: 50px;
+    color: #FFC011;
+    margin: 0px 20px;
+}
+
+.bar_card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    
+}
+
+.bar_card__title {
+    flex: 0;
+
+}
+
+.bar_card__slide__title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.bar_card__slider {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    flex: 1;
+    overflow: hidden;
+  
+}
+
+.bar_card__slide {
+   
+    font-family: Abibas;
+    transition: .4s;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-image: url('../image/menu/holst.jpg');
+    background-size: cover;
+    width: 100%;
+    
+    height: 100%;
+}
+
+/* BAR CARD SLIDER END */
+
 
 
 @media (max-width: 2000px) {
