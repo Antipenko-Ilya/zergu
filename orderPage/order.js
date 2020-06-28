@@ -2,6 +2,14 @@ let orderData = JSON.parse(localStorage.getItem('dishes'));
 console.log(orderData);
 let totalPrice;
 
+let now = new Date();
+if (now.getHours() > 0 && now.getHours() < 12) {
+    document.querySelector('.accept_late_order').style.display = 'flex';
+    document.querySelector('.accept_late_order__text').innerHTML = 'К сожалению сейчас '
+    + 'мы не можем  доставить вам заказ.<br>'
+    +  `Ближайшее время доставки: 12:30<br> ${now.getDate()} числа`
+}
+
 
 function renderOrderList() {
     document.querySelector('.order__list_inner_wrapper').innerHTML = '';
@@ -131,7 +139,42 @@ document.querySelector('.order__list_wrapper').addEventListener('click', (e) => 
 
 
 
+function preCall() {
 
+    const name = document.querySelector('#name').value;
+    const phone = document.querySelector('#phone').value;
+    const adress = document.querySelector('#adress').value;
+    const methods = [
+        document.querySelector('#method_1').checked,
+        document.querySelector('#method_2').checked
+    ]
+
+    let errMessage = false;
+
+    if (localStorage.getItem('dishes') == null) {
+        document.querySelector('.err_message').innerHTML = 'Вы не заказали ни одно блюдо';
+        return
+    }
+    if (name == '') {
+        document.querySelector('.err_message').innerHTML = 'Введите имя';
+        return
+    }
+    if (phone == '') {
+        document.querySelector('.err_message').innerHTML = 'Введите телефон';
+        return
+    }
+    if (methods[0] === false && methods[1] === false) {
+        document.querySelector('.err_message').innerHTML = 'Выберите способ доставки';
+        return
+    }
+    if (methods[0] === true && adress == '') {
+        document.querySelector('.err_message').innerHTML = 'Введите адрес доставки';
+        return
+    }
+   
+
+    call();
+}
 
 
 function call() {
@@ -140,7 +183,7 @@ function call() {
     console.log(msg + order)
     $.ajax({
         type: 'POST',
-        url: 'order.php', // Если обработчик лежит не рядом с формой, то здесь следует указать полный путь до него. Например http://example.com/mail.php
+        url: 'order.php', 
         data: "data=" + order + '&' + msg,
         // 
         success: function (data) {

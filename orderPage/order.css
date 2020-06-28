@@ -344,6 +344,35 @@ input:focus {
     font-weight: bold;
 }
 
+.err_message {
+    font-size: 30px;
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+/* order late modal */
+.accept_late_order {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.accept_late_order__content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 @media screen and (max-width: 800px) {
     .order__inner_wrapper {
         flex-direction: column;

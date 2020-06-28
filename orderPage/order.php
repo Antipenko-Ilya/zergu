@@ -5,16 +5,27 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['name'];
+
 $phone = $_POST['phone'];
+
 $email = $_POST['email'];
+if ($email == '') {
+    $email = 'не указана';
+}
+
 $adress = $_POST['adress'];
+if ($adress == '') {
+    $adress = 'не указан';
+}
+
 $method = $_POST['method'];
 
 if ($method == 'delivery') {
-    $method = 'Доставка'
+    $method = 'Доставка';
 } else {
-    $method = 'Самовывоз'
+    $method = 'Самовывоз';
 }
+
 
 $data = json_decode($_POST['data']);
 $string23 = file_get_contents("data.txt", true);

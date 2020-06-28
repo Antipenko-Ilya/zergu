@@ -14,6 +14,16 @@
 </head>
 
 <body>
+    <div class="accept_late_order">
+        <div class="accept_late_order__content feedback_inner">
+            <div class="accept_late_order__text">
+               
+            </div>
+            <div class="accept_late_order__button feedback_btn" onclick="document.querySelector('.accept_late_order').style.display = 'none' ">
+                ОК
+            </div>
+        </div>
+    </div>
     <div class="feedback_wrapper">
         <div class="feedback_inner">
             <div class="feedback_heading">
@@ -50,12 +60,12 @@
                         </div>
                     </div>
                 </div>
-                <form class="order__input_wrapper" id="forms" action="javascript:void(null);" onsubmit="call()"
+                <form class="order__input_wrapper" id="forms" action="javascript:void(null);" onsubmit="preCall()"
                     method="POST">
-                    <input class="order__input" placeholder="Имя" name="name">
-                    <input class="order__input" placeholder="Почта(опционально)" name="email">
-                    <input class="order__input" placeholder="Телефон" name="phone">
-                    <input class="order__input" placeholder="Адрес" name="adress">
+                    <input id="name" class="order__input" placeholder="Имя" name="name">
+                    <input id="email" class="order__input" placeholder="Почта (не обязательно)" name="email">
+                    <input id="phone" class="order__input" placeholder="Телефон" name="phone">
+                    <input id="adress" class="order__input" placeholder="Адрес (указывать при доставке)" name="adress">
 
                     <div class="methods_wrapper">
                         <div class="method_wrapper">
@@ -70,7 +80,12 @@
                     </div>
 
                     <input type='submit' class="order__submit_btn">
+                    <div class="err_message">
+
+                    </div>
                 </form>
+               
+               
         </div>
     </div>
     </div>
